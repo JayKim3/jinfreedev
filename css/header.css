@@ -1,0 +1,92 @@
+/* .header.hide {
+  display: none;
+} */
+/* 
+.hide {
+  opacity: 0;
+} */
+
+.header {
+  transition: 0.5s;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  right: 0;
+  background-color: black;
+}
+
+.jin-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header__home-btn {
+  width: 45px;
+  height: 30px;
+  top: 20px;
+  position: relative;
+  float: left;
+}
+
+.header__title {
+  font-family: "Lobster", cursive;
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+li {
+  list-style-type: none;
+}
+.header__navi {
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
+
+.header__navi-btn {
+  width: 45px;
+  height: 30px;
+  position: relative;
+  top: 5px;
+}
+
+.header__navi i,
+.header__home-btn {
+  font-size: 20px;
+}
+.header__navi-btn.design-btn {
+  left: 5px;
+}
+
+.header__navi-btn-popup {
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  margin-left: -23px;
+  text-align: center;
+  background-color: #009cff;
+  line-height: 28px;
+  font-size: 1.2rem;
+  top: 40px;
+  border-radius: 15px;
+  font-family: "Lobster", cursive;
+  display: none;
+}

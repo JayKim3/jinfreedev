@@ -14,7 +14,6 @@
 .portfolio-list {
   display: block;
   height: 300px;
-  /* padding: 20px; */
   margin: 10px 0;
   position: relative;
   border: 1px solid white;
@@ -74,6 +73,4 @@
   margin: 15px;
 }
 
-.portfolio-list-maintext {
-  display: none;
-}
+.portfolio-list-maintext {}

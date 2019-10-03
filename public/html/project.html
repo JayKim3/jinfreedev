@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <title>Project</title>
+</head>
+<style>
+  #dialog-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    z-index: 10;
+  }
+
+  #my-dialog {
+    display: none;
+    position: fixed;
+    left: calc(50% - 160px);
+    top: calc(50% - 70px);
+    width: 320px;
+    height: 140px;
+    background: #fff;
+    z-index: 11;
+    padding: 10px;
+  }
+</style>
+
+<script>
+  $(function () {
+    $("#btn-open-dialog,#dialog-background,#btn-close-dialog").click(function () {
+      $("#my-dialog,#dialog-background").toggle();
+    });
+  });
+</script>
+
+<body>
+  <div class="header hide">
+    <div class="jin-wrapper">
+      <div class="header__home-btn">
+        <a href="home.html">
+          <i class="fas fa-home"></i>
+        </a>
+      </div>
+
+      <a href="project.html">
+        <h2 class="header__title">Project</h2>
+      </a>
+      <ul class="header__navi">
+        <li>
+          <div class="header__navi-btn menu-btn myinfo-btn">
+            <div class="header__navi-btn-popup">
+              My Info
+            </div>
+            <a href="home.html"><i class="fas fa-user"></i></a>
+          </div>
+        </li>
+        <li>
+          <div class="header__navi-btn menu-btn project-btn">
+            <div class="header__navi-btn-popup">
+              Project
+            </div>
+            <a href="project.html"><i class="fas fa-project-diagram"></i></a>
+          </div>
+        </li>
+        <li>
+          <div class="header__navi-btn menu-btn design-btn">
+            <div class="header__navi-btn-popup">
+              Design
+            </div>
+            <i class="fas fa-pen"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section__contents">
+    <div class="jin-wrapper">
+      <ul class="project__portfolio">
+        <li>
+          <h2 class="portfolio-title">HTML / CSS / JS</h2>
+        </li>
+        <li>
+          <button id="btn-open-dialog">test</button>
+          <div class="portfolio-list">
+            <div class="portfolio-list-title">
+              Marvel Flip Card
+            </div>
+            <div class="portfolio-list-texts">
+              <p class="portfolio-list-subtexts">
+                바닐라 자바스크립트를 이용한 미니 게임
+              </p>
+              <p class="portfolio-list-maintext">
+                Marvel Flip Card
+              </p>
+            </div>
+
+            <div class="portfolio-list-bg" style="background-image: url('../images/marvelbg.jpg')"></div>
+            <div class="portfolio-list-tab">JavaScript</div>
+          </div>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="../js/project.js"></script>
+  <div id="my-dialog">
+    창 내용
+  </div>
+  <div id="dialog-background"></div>
+</body>
+
+</html>

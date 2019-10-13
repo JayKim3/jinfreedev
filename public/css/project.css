@@ -1,5 +1,17 @@
+.section__contents {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 60px;
+  background-color: #191a1c;
+}
+
 .project__portfolio {
   padding: 10px 0;
+}
+
+.contents-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .portfolio-title {
@@ -14,7 +26,6 @@
 .portfolio-list {
   display: block;
   height: 300px;
-  margin: 10px 0;
   position: relative;
   border: 1px solid white;
 }
@@ -29,6 +40,10 @@
   right: 0;
   opacity: 0.6;
   transition: 0.5s;
+}
+
+.portfolio-list-bg:hover {
+  opacity: 1.0;
 }
 
 .portfolio-list-title {
@@ -47,30 +62,7 @@
   padding: 4px 8px;
   background-color: #c1ccd3;
   color: #333;
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
   margin: 30px 0 0 0;
-  transition: 0.5s;
 }
-
-.portfolio-list-texts {
-  height: 40px;
-  line-height: 42px;
-  padding: 0 20px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to right, #0060bf, #009cff);
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 300;
-  opacity: 0;
-  transition: 0.5s;
-  z-index: 5;
-  white-space: nowrap;
-  border-radius: 30px;
-  margin: 15px;
-}
-
-.portfolio-list-maintext {}

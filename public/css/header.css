@@ -1,9 +1,31 @@
 .header {
+  padding: 15px 0;
+  transition: .5s;
   position: fixed;
-  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: black;
-  z-index: 20;
+  opacity: .9;
+  z-index: 40;
 }
+
+.header.fixed {
+  padding: 8px 0;
+}
+
+
+.header.hide {
+  top: -80px;
+}
+
+
+.clearfix:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
 
 .jin-wrapper {
   max-width: 1280px;
@@ -11,7 +33,6 @@
 }
 
 .header__home-btn {
-  top: 20px;
   position: relative;
   float: left;
   cursor: pointer;
@@ -48,13 +69,14 @@ li {
   display: flex;
   flex-direction: row;
   float: right;
+
 }
 
 .header__navi-btn {
   width: 45px;
   height: 30px;
   position: relative;
-  top: 5px;
+
 }
 
 .header__navi i,
@@ -79,4 +101,8 @@ li {
   border-radius: 15px;
   font-family: "Lobster", cursive;
   display: none;
+}
+
+.header-navi-btn:hover .header-navi-btn-popup {
+  display: block;
 }

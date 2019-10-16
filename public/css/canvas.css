@@ -12,8 +12,19 @@ body {
     height: 100%;
 }
 
-#start {
+#name {
     font-size: 30px;
+    font-family: "Lobster", cursive;
+    position: absolute;
+    left: 43%;
+    top: 43%;
+    color: white;
+    z-index: 999;
+
+}
+
+#skip {
+    font-size: 20px;
     font-family: "Lobster", cursive;
     position: absolute;
     left: 50%;
@@ -21,4 +32,38 @@ body {
     color: white;
     z-index: 999;
     cursor: pointer;
+}
+
+.developer {
+    font-size: 30px;
+    font-family: "Lobster", cursive;
+    position: absolute;
+    left: 44%;
+    top: 43%;
+    color: white;
+    z-index: 999;
+}
+
+.start {
+    font-size: 30px;
+    font-family: "Lobster", cursive;
+    position: absolute;
+    left: 49.5%;
+    top: 43%;
+    color: white;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.clear-display {
+    display: none;
+}
+
+.openning {
+    transition: 1s;
+    font-family: 'Raleway', sans-serif;
 }

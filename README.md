@@ -19,14 +19,17 @@
 
 1. particle-canvas 라이브러리를 사용
 
-2. 정중앙에 Start 버튼을 클릭 시 Home.html페이지로 이동
+2. My name is Seong Jin -> Developer -> Start 
 
-3. 페이지 이동 시마다 로딩 구현
+3. 정중앙에 Start 버튼을 클릭 시 Home.html페이지로 이동
+
+4. 페이지 이동 시마다 로딩 구현
 
 ### Home.html
 
 1. Header 부분 : 홈 버튼 / Main title / (My info, Project, ?) 버튼  
-   왼쪽 상단 메뉴 버튼 선택 시 -> Home / About / Project /
+   헤더 오른쪽  -> Home / About / Project  
+   I am / 이름 / 프로필 이미지
 
 2. Section 부분 : 프론트엔드 개발자로 길을 선택한 이유 , 나의 소개 , 보유 자격증 , 사용해본 기술과 관심있는 기술( 제이쿼리와 애니메이션을 활용하여 구현 )  
 
@@ -38,7 +41,6 @@
 <li>Awards</li>
 <li>Lisences</li>
 <li>Hobbies</li>
-
 </ul>
 
 3. Footer 부분 : 상단 간단한 마무리 + ( 이메일 / 전화번호 / Git주소 ) , 하단 (Github주소 , Facebook / Last Updated On 날짜 / © 2019 SJ KIM)

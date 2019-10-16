@@ -1,6 +1,45 @@
+$('#name')
+    .each(function () {
+        $(this)
+            .delay(1500)
+            .animate({ opacity: 0 }, 1000)
+    });
+
+var appearDeveloper = function () {
+    $('.developer')
+        .removeClass('clear-display')
+        .removeClass('hide', 1000)
+        .delay(1500)
+        .animate({ opacity: 0 }, 1000)
+}
+
+var appearStart = function () {
+    $('.start')
+        .removeClass('clear-display')
+        .removeClass('hide', 1000)
+}
+
+$('.developer').each(function (index, item) {
+    console.log(index, item);
+    console.log("developer");
+    $(this)
+        .delay(2500)
+        .animate({ opacity: 1 }, 1000, function () {
+            appearDeveloper();
+        })
+})
+
+$('.start').each(function () {
+    $(this)
+        .delay(5300)
+        .animate({ opacity: 1 }, 1000, function () {
+            appearStart();
+        })
+})
+
+
 // particle.min.js hosted on GitHub
 // Scroll down for initialisation code
-
 
 ! function (a) {
     var b = "object" == typeof self && self.self === self && self || "object" == typeof global && global.global === global && global;
@@ -31,13 +70,13 @@
         }, this.init()
     }, b.prototype.init = function () {
         if (this.k = document.createElement("div"), this.i.appendChild(this.k), this.l(this.k, {
-                position: "absolute",
-                top: 0,
-                left: 0,
-                bottom: 0,
-                right: 0,
-                // "z-index": 1
-            }), /(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.background)) this.l(this.k, {
+            position: "absolute",
+            top: 0,
+            left: 0,
+            bottom: 0,
+            right: 0,
+            // "z-index": 1
+        }), /(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.background)) this.l(this.k, {
             background: this.options.background
         });
         else {
@@ -56,7 +95,7 @@
             "z-index": "20",
             position: "relative"
         }), window.addEventListener("resize", function () {
-            return this.i.offsetWidth === this.i.size.width && this.i.offsetHeight === this.i.size.height ? !1 : (this.canvas.width = this.i.size.width = this.i.offsetWidth, this.canvas.height = this.i.size.height = this.i.offsetHeight, clearTimeout(this.m), void(this.m = setTimeout(function () {
+            return this.i.offsetWidth === this.i.size.width && this.i.offsetHeight === this.i.size.height ? !1 : (this.canvas.width = this.i.size.width = this.i.offsetWidth, this.canvas.height = this.i.size.height = this.i.offsetHeight, clearTimeout(this.m), void (this.m = setTimeout(function () {
                 this.o = [];
                 for (var a = 0; a < this.canvas.width * this.canvas.height / this.options.density; a++) this.o.push(new c(this));
                 this.options.interactive && this.o.push(this.p), requestAnimationFrame(this.update.bind(this))

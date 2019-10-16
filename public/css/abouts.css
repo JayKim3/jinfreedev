@@ -1,0 +1,267 @@
+.abouts {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.abouts.darkbg {
+    background-color: #191a1c;
+}
+
+.about-wrapper {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.l-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-page {
+    background-color: #191a1c;
+    padding: 74px 0;
+    overflow: hidden;
+}
+
+.about-navigation {
+    width: 150px;
+    height: 250px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    color: #555;
+    line-height: 2.0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 100px;
+    z-index: 30;
+}
+
+.about-navigation.hide {
+    margin-left: -200px;
+}
+
+
+.about-navigation li:nth-child(1) {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: white;
+}
+
+.about-navigation-btn:hover {
+    color: yellow;
+    font-weight: 900;
+    letter-spacing: 8px;
+}
+
+.about-navigation-btn.selected {
+    color: yellow;
+    font-weight: 900;
+}
+
+.about-navigation-btn {
+    display: block;
+    padding: 3px;
+    transition: .5s;
+}
+
+.about-Iam {
+    height: 3500px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.about-Iam-bg {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3500px;
+    background-image: url(../images/background.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.Iam-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.Iam-names {
+    width: 240px;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 3rem;
+    text-align: left;
+    position: absolute;
+    margin-left: 10px;
+    top: 50%;
+    left: 50%;
+    line-height: 70px;
+    transform: translate(-50%, -50%);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.Iam-names.hide {
+    opacity: 0;
+    margin-top: 30px;
+}
+
+.Iam-names-kor {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 15px;
+    font-weight: 300;
+
+}
+
+.Iam-names-eng {
+
+    font-size: 2rem;
+    color: #777;
+}
+
+.Iam-subtext {
+    margin: 40vh auto 0;
+    width: 500px;
+    height: auto;
+    font-size: 4rem;
+    font-weight: 200;
+    text-align: left;
+    line-height: 1.2;
+    letter-spacing: -3px;
+    transition: .5s;
+    white-space: nowrap;
+}
+
+.Iam-subtext.hide {
+    opacity: 0;
+    left: 48%;
+    transition: .5s
+}
+
+.center-lock {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+}
+
+.hide {
+    opacity: 0;
+}
+
+.Iam-subtext-first {
+    color: white;
+}
+
+.Iam-subtext-second {
+    color: #ddd;
+}
+
+.Iam-subtext-third {
+    font-size: 1.2rem;
+    margin-top: 50px;
+    color: white;
+    line-height: 1.5;
+    letter-spacing: -1px;
+    position: relative;
+}
+
+.Iam-subtext-paragraph {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Iam-subtext-paragraph-title {
+    margin: 10px 0;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.Iam-subtext-paragraph-title::before {
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.Iam-down-btn {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 4rem;
+    margin: 0 auto;
+    opacity: .3;
+}
+
+.Iam-down-btn.animation {
+    animation: downbtn 1s infinite alternate-reverse;
+}
+
+.about-page.darkbg {
+    background-color: #151617;
+}
+
+.about-page.black {
+    background-color: black;
+}
+
+.personal {
+    height: 2000px;
+    padding: 50px 0;
+    position: relative;
+}
+
+.personal-explain {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 5rem;
+    font-weight: 200;
+    line-height: 1.2;
+    max-width: 840px;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.personal:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/men.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+}
+
+.personal-explain-introduce {
+    color: skyblue;
+    font-weight: 400;
+}
+
+.clear-display {
+    display: none;
+}
+
+@keyframes downbtn {
+    0% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .6;
+    }
+}

@@ -14,15 +14,15 @@ $(document).ready(function () {
     // Loading...
     $('.abouts').removeClass('hide', 700);
     $('.about-page').delay(500).removeClass('black', 1000);
-    $('.about-Iam-bg').delay(1000).removeClass('hide', 1000);
-    $('.Iam-names').delay(300).removeClass('hide', 1500);
-    $('.about-navigation').delay(1500).removeClass('hide', 500);
+    $('.about-Iam-bg').delay(1200).removeClass('hide', 1000);
+    $('.Iam-names').delay(200).removeClass('hide', 1500);
+    $('.about-navigation').delay(1800).removeClass('hide', 500);
 });
 
 // 스크롤시, 가운데 걸리는 아이템들 함수
-var personal_explainTop = $('.about-personal-explain').offset().top;
+var personal_explainTop = $('.personal-explain').offset().top;
 
-var middleLock = function (item, itemTop, max) {
+var middlePosition = function (item, itemTop, max) {
 
     var nowScroll = $(window).scrollTop();
     var halfOfScreen = $(window).height() / 2;
@@ -36,10 +36,10 @@ var middleLock = function (item, itemTop, max) {
     // console.log(scrollCenter, itemCenterLocation);
 
     if (scrollCenter > itemCenterLocation) {
-        $item.addClass('center-lock');
+        $item.addClass('subtext-center');
     }
     else {
-        $item.removeClass('center-lock');
+        $item.removeClass('subtext-center');
     }
 
     if (max != 0) {
@@ -78,8 +78,8 @@ var middleHighlight = function (item) {
 $(window).scroll(function () {
 
     var nowScroll = $(this).scrollTop();
-    middleLock('.about-personal-explain', personal_explainTop, 1700);
-    // middleHighlight('.about-timeline-item');
+    middlePosition('.personal-explain', personal_explainTop, 1700);
+    middleHighlight('.about-timeline-item');
 
 
     $('.about-page').each(function (pageIndex) {
@@ -109,13 +109,13 @@ $(window).scroll(function () {
                     $('.Iam-subtext').addClass('hide');
                 }
                 // 서브텍스트 아래 문장
-                if (nowScroll > start + 1300 && nowScroll <= start + 2200) {
+                if (nowScroll > start + 1200 && nowScroll <= start + 2100) {
                     $('.Iam-subtext-paragraph-1').removeClass('hide', 300);
                 }
                 else {
                     $('.Iam-subtext-paragraph-1').addClass('hide', 300);
                 }
-                if (nowScroll > start + 2200) {
+                if (nowScroll > start + 2100) {
                     $('.Iam-subtext-paragraph-2').removeClass('hide', 300);
                 }
                 else {
@@ -125,38 +125,36 @@ $(window).scroll(function () {
             // PERSONAL 페이지 이벤트 ---------------------------------------------------------
             if (pageIndex == 1) {
                 console.log("PageIndex:1");
-                var $blabla = $('.about-personal-explain-blabla');
+                var $introduce = $('.personal-explain-introduce');
                 $('.Iam-subtext').addClass('clear-display');
 
+
                 if (nowScroll > start) {
-                    $blabla.text('낙천적입니다');
+                    $introduce.text('긍정적입니다');
                 }
                 if (nowScroll > start + 200) {
-                    $blabla.text('외향적입니다');
+                    $introduce.text('비흡연자입니다');
                 }
                 if (nowScroll > start + 400) {
-                    $blabla.text('비흡연자입니다');
+                    $introduce.text('술보단 커피입니다');
                 }
                 if (nowScroll > start + 600) {
-                    $blabla.text('술보단 커피입니다');
+                    $introduce.text('미식가입니다');
                 }
                 if (nowScroll > start + 800) {
-                    $blabla.text('대식가입니다');
+                    $introduce.text('사람을 좋아합니다');
                 }
                 if (nowScroll > start + 1000) {
-                    $blabla.text('사람을 좋아합니다');
+                    $introduce.text('음악을 좋아합니다');
                 }
                 if (nowScroll > start + 1200) {
-                    $blabla.text('크리스천입니다');
-                }
-                if (nowScroll > start + 1400) {
-                    $blabla.text('운동을 좋아합니다');
+                    $introduce.text('운동을 좋아합니다');
                 }
             }
 
             // TIMELINE 페이지 이벤트 ---------------------------------------------------------
             if (pageIndex == 2) {
-                if (nowScroll > start + 800) {
+                if (nowScroll > start + 600) {
                     $('.about-timeline')
                         .removeClass('darkbg', 500)
                 }
@@ -176,7 +174,7 @@ $('.about-navigation-btn').click(function () {
     canClick = false;
 
     var index = $(this).parent().index();
-    var positionTop = $('.about-page').eq(index).position().top;
+    var positionTop = $('.about-page').eq(index - 1).position().top;
 
     $('.about-navigation-btn').removeClass('selected');
     $(this).addClass('selected');

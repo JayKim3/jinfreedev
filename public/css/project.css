@@ -1,8 +1,11 @@
+.project-wrapper {
+  background-color: #191a1c;
+}
+
 .section__contents {
   font-size: 1.5rem;
   text-align: center;
   margin-top: 60px;
-  background-color: #191a1c;
 }
 
 .project__portfolio {

@@ -14,14 +14,14 @@ $('.marvel-flip').magnificPopup({ //.container is div hypotetical class
 $('.escaperoom').magnificPopup({
     type: 'iframe',
     items: {
-        src: '../../escaperoom/index.html'
+        src: '../../escaperoomtest/index.html'
     }
 })
 
 $('.TetrisGame').magnificPopup({
     type: 'iframe',
     items: {
-        src: "../../Tetris_SJ/index.html"
+        src: "../../SJ_Tetris/index.html"
     }
 });
 

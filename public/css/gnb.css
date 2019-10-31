@@ -45,7 +45,7 @@ li {
 
 
 .gnb-wrapper .gnb-nav .menu_item:first-child:after {
-    content: 'Go to Home'
+    content: 'Go to Blog'
 }
 
 .gnb-wrapper .gnb-nav .menu_item:nth-child(2):after {
@@ -53,7 +53,7 @@ li {
 }
 
 .gnb-wrapper .gnb-nav .menu_item:nth-child(3):after {
-    content: 'About'
+    content: 'Go to Github'
 }
 
 .gnb-wrapper .gnb-nav .menu_item:hover {

@@ -6,7 +6,6 @@
   left: 0;
   right: 0;
   background-color: black;
-  opacity: .9;
   z-index: 40;
 }
 
@@ -14,17 +13,12 @@
   padding: 8px 0;
 }
 
-
+/* 
 .header.hide {
   top: -80px;
-}
+} */
 
 
-.clearfix:after {
-  content: ' ';
-  display: block;
-  clear: both;
-}
 
 
 .jin-wrapper {

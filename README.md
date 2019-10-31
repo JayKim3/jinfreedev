@@ -35,12 +35,11 @@
 
 <ul>
 <li>I am</li>
-<li>Personal</li>
+<li>About me</li>
 <li>Timeline</li>
 <li>Skills</li>
-<li>Awards</li>
 <li>Lisences</li>
-<li>Hobbies</li>
+<li>Interest With</li>
 </ul>
 
 3. Footer 부분 : 상단 간단한 마무리 + ( 이메일 / 전화번호 / Git주소 ) , 하단 (Github주소 , Facebook / Last Updated On 날짜 / © 2019 SJ KIM)

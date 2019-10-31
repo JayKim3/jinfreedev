@@ -72,21 +72,22 @@
             <ul class="about-navigation hide">
                 <li>List</li>
                 <li><a class="about-navigation-btn selected">I am</a></li>
-                <li><a class="about-navigation-btn">Personal</a></li>
+                <li><a class="about-navigation-btn">About</a></li>
                 <li><a class="about-navigation-btn">Timeline</a></li>
                 <li><a class="about-navigation-btn">Skills</a></li>
-                <li><a class="about-navigation-btn">Lisences</a></li>
-                <li><a class="about-navigation-btn">Hobbies</a></li>
+                <li><a class="about-navigation-btn">Hobby</a></li>
             </ul>
 
             <div class="about-page about-Iam black">
+                <canvas id="character" width="400" height="400" class="canvas-character hide"></canvas>
                 <div class="about-Iam-bg hide"></div>
+
                 <div class="Iam-wrapper">
                     <div class="Iam-names hide">
                         <h2 class="Iam-names-kor">김성진</h2>
                         <h2 class="Iam-names-eng">Seong Jin Kim</h2>
                     </div>
-                    <div class="Iam-subtext clear-display subtext-center hide">
+                    <div class=" Iam-subtext clear-display subtext-center hide">
                         <p class="Iam-subtext-first">
                             생
                             <strong>각</strong>
@@ -134,46 +135,83 @@
             <div class="about-page darkbg personal">
                 <div class="l-wrapper">
                     <div class="personal-explain">
-                        <p class="personal-explain-title">Personal</p>
+                        <p class="personal-explain-title">About me</p>
                         <p class="personal-explain-iam">저는</p>
                         <p class="personal-explain-introduce"> &#8226; &#8226; &#8226; 입니다</p>
                     </div>
                 </div>
             </div>
 
-            <div class="about-page darkbg about-timeline">
+            <div class="about-page darkbg timeline">
                 <div class="l-wrapper">
-                    <div class="about-timeline-item-wrapper">
-                        <div class="about-timeline-item">
-                            <div class="about-timeline-item-icon"></div>
-                            <p class="about-timeline-item-year">2013</p>
-                            <p class="about-timeline-item-text">성공회대학교 컴퓨터공학과 입학</p>
+                    <div class="timeline-item-wrapper">
+                        <div class="timeline-item">
+                            <div class=timeline-item-icon"></div>
+                            <p class="timeline-item-year">2013</p>
+                            <i class="fas fa-photo-video timeline-item-icon"></i>
+                            <p class="timeline-item-text">성공회대학교 멀티미디어공학과 입학</p>
                         </div>
 
-                        <div class="about-timeline-item">
-                            <div class="about-timeline-item-icon"></div>
-                            <p class="about-timeline-item-year">2016</p>
-                            <p class="about-timeline-item-text">성공회대학교 컴퓨터공학과 복학</p>
+                        <div class="timeline-item">
+                            <div class="timeline-item-icon"></div>
+                            <p class="timeline-item-year">2016</p>
+                            <i class="fas fa-laptop-code timeline-item-icon"></i>
+                            <p class="timeline-item-text">성공회대학교 컴퓨터공학과 복학</p>
                         </div>
-                        <div class="about-timeline-item">
-                            <div class="about-timeline-item-icon"></div>
-                            <p class="about-timeline-item-year">2020</p>
-                            <p class="about-timeline-item-text">성공회대학교 컴퓨터공학과 졸업</p>
+                        <div class="timeline-item">
+                            <div class="timeline-item-icon"></div>
+                            <p class="timeline-item-year">2020</p>
+                            <i class="fas fa-laptop-code timeline-item-icon"></i>
+                            <p class="timeline-item-text">성공회대학교 컴퓨터공학과 졸업</p>
                         </div>
-                        <div class="about-timeline-item">
-                            <div class="about-timeline-item-icon"></div>
-                            <p class="about-timeline-item-year">2020</p>
-                            <p class="about-timeline-item-text">? ? ?</p>
+                        <div class="timeline-item">
+                            <div class="timeline-item-icon"></div>
+                            <p class="timeline-item-year">2020</p>
+                            <p class="timeline-item-text">? ? ?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-page darkbg skills">
+                <div class="skills-wrapper">
+                    <h2 class="skills-title">Developer Skills</h2>
+                    <div class="skills-info-wrapper">
+                        <div id="experienced" class="skills-info-left">
+                            <p>Experienced Skills</p>
+                        </div>
+                        <div id="Interested" class="skills-info-right">
+                            <p>Interested skills</p>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div class="about-page darkbg hobby">
+                <div class="hobby-wrapper">
+                    <h2 class="hobby-title">Hobby</h2>
+                    <div class="hobby-info-wrapper">
+                        <div class="hobby-info-swim"></div>
+                        <p>Swim</p>
+                        <div class="hobby-info-watch"></div>
+                        <p>Movie</p>
+                        <div class="hobby-info-guitar"></div>
+                        <p>
+                            Acoustic guitar</p>
+                        <div class="hobby-info-coding"></div>
+                        <p>
+                            Coding</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+    </div>
     </div>
 
     <script src="../js/header.js"></script>
     <script src="../js/about.js"></script>
+    <script src="../js/skills.js"></script>
 </body>
 
 </html>

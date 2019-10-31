@@ -1,0 +1,52 @@
+.skills {}
+
+.skills-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skills-title {
+    margin-top: 20px;
+    border-bottom: 2px solid;
+    padding-bottom: 30px;
+    font-size: 3rem;
+}
+
+.skills-info-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.skills-info-left {
+    width: 50%;
+    height: 600px;
+    padding: 50px;
+}
+
+.skills-info-left>p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.skills-info-right {
+    width: 50%;
+    height: 600px;
+    padding: 50px;
+}
+
+.skills-info-right>p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.experienced-skills {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.experienced-skill-row {
+    display: flex;
+    flex-direction: row;
+}

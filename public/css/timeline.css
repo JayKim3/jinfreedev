@@ -1,8 +1,8 @@
-.about-timeline {
-    position: relative;
+.timeline {
+    background-color: #191a1c;
 }
 
-.about-timeline:after {
+.timeline:after {
     content: "";
     display: block;
     position: absolute;
@@ -17,30 +17,36 @@
     opacity: .8;
 }
 
-.about-timeline-item-wrapper {
+.timeline-item-wrapper {
     margin: 100px 0 100px;
     text-align: 0 auto;
     font-weight: 100;
     line-height: 1;
 }
 
-.about-timeline-item {
+.timeline-item {
     padding: 30px 10px 30px;
     opacity: .1;
     transition: .5s;
 }
 
-.about-timeline-item.highlight {
+.timeline-item.highlight {
     opacity: 1;
 
 }
 
-.about-timeline-item-year {
-    font-size: 4em;
+.timeline-item-year {
+    font-size: 3.5em;
     margin-bottom: 50px;
 }
 
-.about-timeline-item-text {
+.timeline-item-icon {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+
+.timeline-item-text {
     font-size: 1.5em;
     letter-spacing: -.05em;
     white-space: nowrap;

@@ -1,7 +1,6 @@
 .abouts {
     font-size: 2.5rem;
     text-align: center;
-    margin-top: 60px;
 }
 
 .abouts.darkbg {
@@ -9,18 +8,12 @@
 }
 
 .about-wrapper {
-    font-size: 1.5rem;
     color: white;
 }
 
-.l-wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
 .about-page {
     background-color: #191a1c;
-    padding: 74px 0;
     overflow: hidden;
 }
 
@@ -75,13 +68,10 @@
 }
 
 .about-Iam-bg {
-    content: "";
-    display: block;
-    position: absolute;
     width: 100%;
-    height: 3500px;
-    background-image: url(../images/background.jpg);
-    background-position: right;
+    height: 1000px;
+    background-image: url(../images/sampleIam.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -119,9 +109,17 @@
 }
 
 .Iam-names-eng {
-
-    font-size: 2rem;
+    font-family: "Lobster", cursive;
+    font-size: 2.5rem;
     color: #777;
+}
+
+.canvas-character {
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    /* background-color: #191a1c;
+    border: 1px solid black; */
 }
 
 .Iam-subtext {
@@ -152,7 +150,7 @@
 
 .subtext-center {
     position: fixed;
-    top: 40%;
+    top: 30%;
     left: 50%;
     margin: auto;
     transform: translate(-50%, -50%);

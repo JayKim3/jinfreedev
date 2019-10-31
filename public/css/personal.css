@@ -16,7 +16,8 @@
 }
 
 .personal-explain-title {
-    margin-bottom: 100px;
+    font-family: "Lobster", cursive;
+    margin: 100px 0 100px 0;
 }
 
 .personal:after {
@@ -25,8 +26,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(../images/woman.jpg);
-    background-position: right;
+    background-image: url(../images/men.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;

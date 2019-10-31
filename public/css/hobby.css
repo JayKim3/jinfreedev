@@ -1,0 +1,57 @@
+.hobby-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hobby-title {
+    margin-top: 20px;
+    border-bottom: 2px solid;
+    padding-bottom: 30px;
+    font-size: 3rem;
+}
+
+.hobby-info-wrapper {
+    width: 50%;
+    margin: 0 auto;
+    height: 1200px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+.hobby-info-swim {
+    height: 20%;
+    margin-top: 30px;
+    background-image: url("../images/swim.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hobby-info-watch {
+    height: 20%;
+    margin-top: 30px;
+    background-image: url("../images/watch.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hobby-info-guitar {
+    height: 20%;
+    margin-top: 30px;
+    background-image: url("../images/guitar.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hobby-info-coding {
+    height: 20%;
+    margin-top: 30px;
+    background-image: url("../images/coding.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hobby-info-wrapper>p {
+    font-size: 30px;
+    color: black;
+}

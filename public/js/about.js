@@ -14,10 +14,48 @@ $(document).ready(function () {
     // Loading...
     $('.abouts').removeClass('hide', 700);
     $('.about-page').delay(500).removeClass('black', 1000);
+    $('.canvas-character ').removeClass('hide', 500);
+    characterDraw();
     $('.about-Iam-bg').delay(1200).removeClass('hide', 1000);
     $('.Iam-names').delay(200).removeClass('hide', 1500);
     $('.about-navigation').delay(1800).removeClass('hide', 500);
 });
+
+
+// 캔버스로 오각형 그리기 함수
+var characterDraw = function () {
+    var ctx = document.querySelector('#character').getContext('2d');
+    draw();
+
+    function draw() {
+        setTimeout(function () {
+            ctx.beginPath();
+            ctx.arc(200, 220, 25, 0, Math.PI, false);
+            ctx.moveTo(185, 190);
+            ctx.arc(180, 190, 6, 0, Math.PI * 2, true);
+            ctx.moveTo(225, 190); // 좌표이동
+            ctx.arc(220, 190, 6, 0, Math.PI * 2, true);
+            ctx.moveTo(200, 10);
+            ctx.lineTo(0, 170);
+            ctx.lineTo(80, 400);
+            ctx.lineTo(320, 400);
+            ctx.lineTo(400, 170);
+            ctx.lineTo(200, 10);
+            // ctx.fillStyle = "skyblue";
+
+            ctx.font = "20px malgun gothic";
+            ctx.fillStyle = "red";
+            ctx.fillText('강한 책임감', 150, 80);
+            ctx.fillText('무한대 체력', 280, 180);
+            ctx.fillText('코딩 열정', 240, 380);
+            ctx.fillText('끊임없는 도전', 80, 380);
+            ctx.fillText('긍정 에너지', 20, 180)
+            // ctx.fill();
+            ctx.strokeStyle = "white";
+            ctx.stroke();
+        }, 1000);
+    }
+};
 
 // 스크롤시, 가운데 걸리는 아이템들 함수
 var personal_explainTop = $('.personal-explain').offset().top;
@@ -79,7 +117,7 @@ $(window).scroll(function () {
 
     var nowScroll = $(this).scrollTop();
     middlePosition('.personal-explain', personal_explainTop, 1700);
-    middleHighlight('.about-timeline-item');
+    middleHighlight('.timeline-item');
 
 
     $('.about-page').each(function (pageIndex) {
@@ -128,38 +166,32 @@ $(window).scroll(function () {
                 var $introduce = $('.personal-explain-introduce');
                 $('.Iam-subtext').addClass('clear-display');
 
-
-                if (nowScroll > start) {
+                if (nowScroll > start + 200) {
                     $introduce.text('긍정적입니다');
                 }
-                if (nowScroll > start + 200) {
+                if (nowScroll > start + 400) {
                     $introduce.text('비흡연자입니다');
                 }
-                if (nowScroll > start + 400) {
+                if (nowScroll > start + 600) {
                     $introduce.text('술보단 커피입니다');
                 }
-                if (nowScroll > start + 600) {
+                if (nowScroll > start + 800) {
                     $introduce.text('미식가입니다');
                 }
-                if (nowScroll > start + 800) {
+                if (nowScroll > start + 1000) {
                     $introduce.text('사람을 좋아합니다');
                 }
-                if (nowScroll > start + 1000) {
-                    $introduce.text('음악을 좋아합니다');
-                }
-                if (nowScroll > start + 1200) {
-                    $introduce.text('운동을 좋아합니다');
-                }
+
             }
 
             // TIMELINE 페이지 이벤트 ---------------------------------------------------------
             if (pageIndex == 2) {
                 if (nowScroll > start + 600) {
-                    $('.about-timeline')
+                    $('.timeline')
                         .removeClass('darkbg', 500)
                 }
                 else {
-                    $('.about-timeline')
+                    $('.timeline')
                         .addClass('darkbg', 500)
                 }
             }

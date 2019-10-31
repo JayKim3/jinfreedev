@@ -1,0 +1,3 @@
+[submodule "SJ_Tetris"]
+	path = SJ_Tetris
+	url = https://github.com/JayKim3/SJ_Tetris.git

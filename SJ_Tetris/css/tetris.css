@@ -1,0 +1,232 @@
+.tetris-wrapper {
+    text-align: center;
+    color: white;
+
+}
+
+.tetris-wrapper .edge-wrap {
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    margin: auto;
+    width: 500px;
+    height: 715px;
+    border-radius: 20px;
+}
+
+
+.tetris-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Tetris_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.tetris-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.tetris-start {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    font-size: 30px;
+    animation: startOpacity 1s infinite alternate-reverse;
+}
+
+.hide {
+    opacity: 0;
+}
+
+
+#tetris {
+    border-collapse: collapse;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tetris tr {
+    background-color: gray;
+}
+
+#tetris td {
+    border: 3px solid white;
+    width: 30px;
+    height: 30px;
+}
+
+.left-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    width: 450px;
+    height: 715px;
+}
+
+.next-title {
+    font-size: 25px;
+}
+
+#next-table tr {
+    background-color: gray;
+}
+
+#next-table td {
+    border: 3px solid white;
+    width: 30px;
+    height: 30px;
+}
+
+
+#next-table {
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+
+#next-table-wrapper {
+    margin-left: auto;
+    width: 200px;
+    height: 250px;
+}
+
+#lines {
+    margin-left: auto;
+    margin-top: 50px;
+    width: 200px;
+    height: 150px;
+}
+
+.linesNumber {
+    border-radius: 5px;
+    background-color: yellow;
+    height: 50px;
+}
+
+.blocksNumber {
+    border-radius: 5px;
+    background-color: green;
+    height: 50px;
+}
+
+.realtime {
+    border-radius: 5px;
+    background-color: red;
+    height: 50px;
+}
+
+.linesNumber>span,
+.blocksNumber>span {
+    color: black;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.realtime>span {
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.score-title {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+#blocks {
+    margin-left: auto;
+    width: 200px;
+    height: 150px;
+}
+
+#times {
+    margin-left: auto;
+    width: 200px;
+    height: 150px;
+}
+
+
+@keyframes startOpacity {
+    0% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+
+@media (max-width: 1400px) {
+
+
+    .tetris-wrapper .edge-wrap {
+        width: 400px;
+    }
+
+    .left-info {
+        width: 300px;
+    }
+
+    #next-table td {
+        border: 3px solid white;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .tetris-wrapper .edge-wrap {
+        max-width: 350px;
+    }
+
+    .left-info {
+        max-width: 200px;
+    }
+
+
+    #next-table td {
+        border: 3px solid white;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media(max-width: 900px) {
+    .left-info {
+        width: 150px;
+    }
+
+    #next-table td {
+        border: 3px solid white;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+@media(max-width:700px) {
+    .left-info {
+        width: 100px;
+    }
+
+    #tetris td {
+        border: 3px solid white;
+        width: 25px;
+        height: 25px;
+    }
+
+    #lines,
+    #blocks,
+    #times {
+        width: 100px;
+    }
+}

@@ -14,7 +14,7 @@ $('.marvel-flip').magnificPopup({ //.container is div hypotetical class
 $('.escaperoom').magnificPopup({
     type: 'iframe',
     items: {
-        src: '../../escaperoomtest/index.html'
+        src: '../../escaperoom/index.html'
     }
 })
 

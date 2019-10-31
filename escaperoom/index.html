@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Escaperoom Start</title>
+</head>
+
+<body>
+    <div class="escaperoom-wrapper">
+        <div class="edge-wrap">
+            <div id="stage1bg" class="stage1-bg">
+                <div id="times" class="escape-time">0:00</div>
+                <div id="firstpw" class="first_pw"></div>
+                <div id="secondpw" class="second_pw"></div>
+                <div id="thirdpw" class="third_pw"></div>
+                <div id="fourthpw" class="fourth_pw"></div>
+                <div id="explain" class="escape-explain animation hide"></div>
+                <div id="complete" class="escape-complete animation">
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio autoplay loop>
+        <source src="./escapeaudio.mp3" type="audio/mp3">
+    </audio>
+    <script src="js/stage1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Tetris Start</title>
+    <style>
+        td.white {
+            background-color: white;
+        }
+
+        td.red {
+            background-color: red;
+        }
+
+        td.blue {
+            background-color: blue;
+        }
+
+        td.orange {
+            background-color: orange;
+        }
+
+        td.green {
+            background-color: green;
+        }
+
+        td.navy {
+            background-color: navy;
+        }
+
+        td.violet {
+            background-color: violet;
+        }
+
+        td.yellow {
+            background-color: yellow;
+        }
+
+        td.black {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tetris-wrapper">
+        <div id="leftInfo" class="left-info hide">
+            <div id="next-table-wrapper">
+                <div class="next-title">Next</div>
+                <table id="next-table"></table>
+            </div>
+            <div id="lines">
+                <h2>Lines</h2>
+                <div class="linesNumber"><span class="spanline" id="linenum">0</span></div>
+            </div>
+            <div id="blocks">
+                <h2>Blocks</h2>
+                <div class="blocksNumber"><span id="blocknum">0</span></div>
+            </div>
+            <div id="times">
+                <h2>Times</h2>
+                <div class="realtime"><span id="time">0 : 00</span></div>
+            </div>
+        </div>
+
+
+
+        <div class="edge-wrap">
+            <div id="tetrisBgScreen" class="tetris-bg">
+                <a id="tetris-start-button" class="tetris-start">GameStart</a>
+            </div>
+
+            <div class="tetris-wrapper">
+                <table id="tetris" class="hide">
+                </table>
+            </div>
+        </div>
+        <div id="scoreShow" class="score-title hide">점수: <span id="score">0</span></div>
+    </div>
+
+    <audio id="Tetris-bgm" src="./TetrisAudio.mp3" autoplay></audio>
+    <script src="./tetris.js"></script>
+</body>
+
+</html>

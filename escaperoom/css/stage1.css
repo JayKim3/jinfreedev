@@ -1,0 +1,349 @@
+.escaperoom-wrapper .edge-wrap {
+    position: absolute;
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.escape-explain {
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    left: 35%;
+    color: white;
+    z-index: -1;
+}
+
+.stage1-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/stage1/stage1_entry.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.stage1-explain1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/stage1/stage1_explanation.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.stage1-explain2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/stage1/stage1_explanation2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.axkeypiece-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/stage1/Axkeypiece.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.axkeypieceClick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/stage1/AxkeypieceClick.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* z-index: 99; */
+}
+
+.axclick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/stage1/axClick.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.breakdesk {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/stage1/breakdesk.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/stage1/card.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cardclick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/stage1/cardClick.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cardcloseup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/stage1/cardcloseup.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.safecloseup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/stage1/safecloseup.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.first_pw {
+    position: absolute;
+    top: 46%;
+    left: 24%;
+    padding: 15px;
+    color: gray;
+    font-size: 50px;
+}
+
+.second_pw {
+    position: absolute;
+    top: 46%;
+    left: 28%;
+    padding: 15px;
+    color: gray;
+    font-size: 50px;
+}
+
+.third_pw {
+    position: absolute;
+    top: 46%;
+    left: 32%;
+    padding: 15px;
+    color: gray;
+    font-size: 50px;
+}
+
+.fourth_pw {
+    position: absolute;
+    top: 46%;
+    left: 36%;
+    padding: 15px;
+    color: gray;
+    font-size: 50px;
+}
+
+.firstkey {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/stage1/firstkey.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.firstkeyclicked {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/stage1/firstkeyclicked.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.keypiece2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/stage1/keypiece2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.keypiece2add {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/stage1/keypiece2add.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.keypiece1closeup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/stage1/keypiece1closeup.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.secondkey {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/stage1/secondkey.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.escape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/stage1/escape.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.escape-complete {
+    font-size: 50px;
+    font-family: "Lobster", cursive;
+    position: absolute;
+    top: 44%;
+    left: 38%;
+    color: red;
+}
+
+.escape-time {
+    position: absolute;
+    font-size: 30px;
+    top: 5%;
+    left: 48%;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+@keyframes repetition {
+    0% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .6;
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in 1;
+}
+
+.fade-out {
+    animation: fadeOut 1s ease-out 1;
+}
+
+.escape-complete.animation {
+    animation: repetition 1s infinite alternate-reverse;
+}
+
+.escape-explain.animation {
+    animation: disappear 3s ease-out 1;
+}

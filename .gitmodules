@@ -1,6 +1,0 @@
-[submodule "SJ_Tetris"]
-	path = SJ_Tetris
-	url = https://github.com/JayKim3/SJ_Tetris.git
-[submodule "escaperoom"]
-	path = escaperoom
-	url = https://github.com/JayKim3/escaperoom.git

@@ -21,7 +21,7 @@ $('.escaperoom').magnificPopup({
 $('.TetrisGame').magnificPopup({
     type: 'iframe',
     items: {
-        src: "../../Tetris/index.html"
+        src: "../../Tetris_SJ/index.html"
     }
 });
 

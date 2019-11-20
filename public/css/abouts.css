@@ -160,12 +160,18 @@
     opacity: 0;
 }
 
+.Iam-subtext-wrapper {
+    margin-bottom: 1.1rem;
+}
+
 .Iam-subtext-first {
     color: white;
+    display: inline;
 }
 
 .Iam-subtext-second {
-    color: #ddd;
+    color: white;
+    display: inline;
 }
 
 .Iam-subtext-third {
@@ -225,6 +231,21 @@
 .clear-display {
     display: none;
 }
+
+.go_top {
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    right: 2%;
+    bottom: 8px;
+    width: 3.5%;
+    min-width: 44px;
+}
+
+.go_top img {
+    width: 100%;
+}
+
 
 @keyframes downbtn {
     0% {

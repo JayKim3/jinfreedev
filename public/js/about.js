@@ -117,7 +117,7 @@ $(window).scroll(function () {
 
     var nowScroll = $(this).scrollTop();
     middlePosition('.personal-explain', personal_explainTop, 1700);
-    middleHighlight('.timeline-item');
+    middleHighlight('.experience-item');
 
 
     $('.about-page').each(function (pageIndex) {
@@ -138,7 +138,10 @@ $(window).scroll(function () {
             // I AM 페이지 이벤트 ---------------------------------------------------------
             if (pageIndex == 0) {
                 $('.Iam-subtext').removeClass('clear-display');
-
+                var $gag = $('.Iam-subtext-first-gag');
+                var $you = $('.Iam-subtext-first-you');
+                $gag.animate({ "font-size": "4.4rem" }, 3000);
+                $you.animate({ "font-size": "4.4rem" }, 3000);
                 // 서브텍스트
                 if (nowScroll > start + 500) {
                     $('.Iam-subtext').removeClass('hide');
@@ -162,12 +165,13 @@ $(window).scroll(function () {
             }
             // PERSONAL 페이지 이벤트 ---------------------------------------------------------
             if (pageIndex == 1) {
-                console.log("PageIndex:1");
                 var $introduce = $('.personal-explain-introduce');
+                var $Iam = $('.personal-explain-iam');
                 $('.Iam-subtext').addClass('clear-display');
-
                 if (nowScroll > start + 200) {
                     $introduce.text('긍정적입니다');
+                    $Iam.animate({ "font-size": "4rem" }, 3000);
+                    $introduce.animate({ "font-size": "4rem" }, 3000);
                 }
                 if (nowScroll > start + 400) {
                     $introduce.text('비흡연자입니다');
@@ -184,7 +188,7 @@ $(window).scroll(function () {
 
             }
 
-            // TIMELINE 페이지 이벤트 ---------------------------------------------------------
+            // Experiences 페이지 이벤트 ---------------------------------------------------------
             if (pageIndex == 2) {
                 if (nowScroll > start + 600) {
                     $('.timeline')

@@ -24,10 +24,9 @@ body {
 
 #skip {
     font-size: 20px;
-    font-family: "Lobster", cursive;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 42%;
     color: white;
     z-index: 999;
     cursor: pointer;

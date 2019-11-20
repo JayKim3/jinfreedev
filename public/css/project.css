@@ -1,71 +1,72 @@
-.project-wrapper {
-  background-color: #191a1c;
-}
+    .project-wrapper {
+      background-color: #191a1c;
+    }
 
-.section__contents {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 60px;
-}
+    .section__contents {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-top: 60px;
+    }
 
-.project__portfolio {
-  padding: 10px 0;
-}
+    .project__portfolio {
+      padding: 10px 0;
+    }
 
-.contents-wrapper {
-  max-width: 1280px;
-  margin: 0 auto;
-}
+    .contents-wrapper {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
 
-.portfolio-title {
-  color: white;
-  border-bottom: 2px solid;
-  text-align: left;
-  padding-top: 15px;
-}
+    .portfolio-title {
+      color: white;
+      border-bottom: 2px solid;
+      text-align: left;
+      padding-top: 15px;
+    }
 
-/* block : 앞뒤로 줄바꿈 된다. 기본 width 가 100% 를 차지하게 된다. */
+    /* block : 앞뒤로 줄바꿈 된다. 기본 width 가 100% 를 차지하게 된다. */
 
-.portfolio-list {
-  display: block;
-  height: 300px;
-  position: relative;
-  border: 1px solid white;
-}
+    .portfolio-list {
+      display: block;
+      height: 300px;
+      position: relative;
+      border: 1px solid white;
+      box-shadow: 3px 3px 3px 3px gray;
+    }
 
-.portfolio-list-bg {
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.6;
-  transition: 0.5s;
-}
+    .portfolio-list-bg {
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.6;
+      transition: 0.5s;
+    }
 
-.portfolio-list-bg:hover {
-  opacity: 1.0;
-}
+    .portfolio-list-bg:hover {
+      opacity: 1.0;
+    }
 
-.portfolio-list-title {
-  position: absolute;
-  max-width: 500px;
-  line-height: 40px;
-  bottom: 15px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: 10;
-}
+    .portfolio-list-title {
+      position: absolute;
+      max-width: 500px;
+      line-height: 40px;
+      bottom: 15px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 10;
+    }
 
-.portfolio-list-tab {
-  position: absolute;
-  padding: 4px 8px;
-  background-color: #c1ccd3;
-  color: #333;
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 30px 0 0 0;
-}
+    .portfolio-list-tab {
+      position: absolute;
+      padding: 4px 8px;
+      background-color: #c1ccd3;
+      color: #333;
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 30px 0 0 0;
+    }

@@ -25,6 +25,7 @@ let InterestedSkills = [
     "url(./images/Ts.png)",
     "url(./images/Vue.png)",
     "url(./images/Webpack.png)",
+    "url('./images/mongodb.png')"
 ]
 
 function leftInit() {
@@ -47,7 +48,6 @@ function leftInit() {
     let React = document.createElement('div');
     let Redux = document.createElement('div');
     let Sass = document.createElement('div');
-    let Sequelize = document.createElement('div');
 
 
     experienced.appendChild(leftrowOne);
@@ -122,6 +122,7 @@ function rightInit() {
     let Ts = document.createElement("div");
     let Vue = document.createElement("div");
     let Webpack = document.createElement("div");
+    // let Mongo = document.createElement('div');
 
 
     Interested.appendChild(leftrowOne);

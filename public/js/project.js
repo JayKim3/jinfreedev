@@ -25,6 +25,13 @@ $('.TetrisGame').magnificPopup({
     }
 });
 
+$('.Hollys').magnificPopup({
+    type: 'iframe',
+    items: {
+        src: "../../HollysCoffee/index.html"
+    }
+});
+
 $('.reorder').magnificPopup({
     type: 'image',
     closeOnContentClick: true,
@@ -37,5 +44,12 @@ $('.reorder').magnificPopup({
     zoom: {
         enabled: true,
         duration: 300 // don't foget to change the duration also in CSS
+    }
+});
+
+$('.Swot').magnificPopup({
+    type: 'iframe',
+    items: {
+        src: "http://13.124.57.55/"
     }
 });

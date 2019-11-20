@@ -1,0 +1,114 @@
+.hide {
+    display: none;
+}
+
+#gnb {
+    width: 60%;
+    height: 15vh;
+    margin: auto;
+
+    #gnb-logo {
+        position: absolute;
+        margin-top: 30px;
+        left: 45%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        cursor: pointer;
+    }
+
+
+    &-text {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+
+        &-left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+
+
+            &-family_owned {
+                cursor: pointer;
+            }
+
+            &-academy {
+                margin-top: 22px;
+                cursor: pointer;
+            }
+
+            &-companyEdition {
+                margin-top: 22px;
+                cursor: pointer;
+            }
+
+            &-family_owned,
+            &-academy,
+            &-companyEdition {
+                &:hover {
+                    animation-name: big;
+                    animation: big 1s;
+                }
+            }
+        }
+
+        &-right {
+            position: absolute;
+            margin-top: 20px;
+            top: 0;
+            left: 70%;
+            right: 0;
+            bottom: 0;
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            color: $color-grey-dark;
+            opacity: 0.7;
+
+            &-membershipLogin,
+            &-membershipSignup,
+            &-customerService,
+            &-eng,
+            &-chineese {
+                margin-left: 10px;
+                font-size: 13px;
+                font-weight: 700;
+                cursor: pointer;
+
+                &:hover {
+                    animation-name: big;
+                    animation: big 1s;
+                    color: $color-black;
+                }
+            }
+        }
+    }
+
+    &_layer {
+        width: 55%;
+        margin: auto;
+        background-color: $color-grey;
+        text-align: center;
+
+        .gnb_layer_Inner {
+            display: flex;
+            flex-direction: row;
+        }
+
+        ul {
+            margin: auto;
+            // margin-right: 50px;
+        }
+
+        li {
+            font-size: 13px;
+            opacity: 0.7;
+        }
+    }
+}

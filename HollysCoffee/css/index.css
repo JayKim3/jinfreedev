@@ -1,0 +1,600 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300|Nanum+Gothic:400,700,800&display=swap&subset=korean");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+ul {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: .1;
+    -webkit-transform: translateX(-8rem);
+    transform: translateX(-8rem);
+  }
+
+  80% {
+    -webkit-transform: translateX(1rem);
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: .1;
+    -webkit-transform: translateX(-8rem);
+    transform: translateX(-8rem);
+  }
+
+  80% {
+    -webkit-transform: translateX(1rem);
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: .1;
+    -webkit-transform: translateX(10rem);
+    transform: translateX(10rem);
+  }
+
+  80% {
+    -webkit-transform: translateX(-1rem);
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: .1;
+    -webkit-transform: translateX(10rem);
+    transform: translateX(10rem);
+  }
+
+  80% {
+    -webkit-transform: translateX(-1rem);
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes big {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  to {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+@keyframes big {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  to {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+#gnb {
+  width: 60%;
+  height: 15vh;
+  margin: auto;
+}
+
+#gnb #gnb-logo {
+  position: absolute;
+  margin-top: 30px;
+  left: 45%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+#gnb-text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+#gnb-text-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+#gnb-text-left-family_owned {
+  cursor: pointer;
+}
+
+#gnb-text-left-academy {
+  margin-top: 22px;
+  cursor: pointer;
+}
+
+#gnb-text-left-companyEdition {
+  margin-top: 22px;
+  cursor: pointer;
+}
+
+#gnb-text-left-family_owned:hover,
+#gnb-text-left-academy:hover,
+#gnb-text-left-companyEdition:hover {
+  -webkit-animation-name: big;
+  animation-name: big;
+  -webkit-animation: big 1s;
+  animation: big 1s;
+}
+
+#gnb-text-right {
+  position: absolute;
+  margin-top: 20px;
+  top: 0;
+  left: 70%;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  color: #474747;
+  opacity: 0.7;
+}
+
+#gnb-text-right-membershipLogin,
+#gnb-text-right-membershipSignup,
+#gnb-text-right-customerService,
+#gnb-text-right-eng,
+#gnb-text-right-chineese {
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#gnb-text-right-membershipLogin:hover,
+#gnb-text-right-membershipSignup:hover,
+#gnb-text-right-customerService:hover,
+#gnb-text-right-eng:hover,
+#gnb-text-right-chineese:hover {
+  -webkit-animation-name: big;
+  animation-name: big;
+  -webkit-animation: big 1s;
+  animation: big 1s;
+  color: #000;
+}
+
+#gnb_layer {
+  width: 55%;
+  margin: auto;
+  background-color: #808080;
+  text-align: center;
+}
+
+#gnb_layer .gnb_layer_Inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+#gnb_layer ul {
+  margin: auto;
+}
+
+#gnb_layer li {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+header #header-text {
+  width: 55%;
+  margin: auto;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+header #header-text-menu,
+header #header-text-hollysmall,
+header #header-text-membership,
+header #header-text-hollysnews,
+header #header-text-store,
+header #header-text-hollysis {
+  padding: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+header #header-text-menu span,
+header #header-text-hollysmall span,
+header #header-text-membership span,
+header #header-text-hollysnews span,
+header #header-text-store span,
+header #header-text-hollysis span {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 0.8rem;
+  color: #474747;
+  opacity: 0;
+}
+
+header #header-text-menu:hover,
+header #header-text-hollysmall:hover,
+header #header-text-membership:hover,
+header #header-text-hollysnews:hover,
+header #header-text-store:hover,
+header #header-text-hollysis:hover {
+  background-color: #ba000b;
+}
+
+header #header-text-menu:hover span,
+header #header-text-hollysmall:hover span,
+header #header-text-membership:hover span,
+header #header-text-hollysnews:hover span,
+header #header-text-store:hover span,
+header #header-text-hollysis:hover span {
+  -webkit-animation-name: fadein;
+  animation-name: fadein;
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
+}
+
+header #section-bg {
+  border-top: 2px solid #ba000b;
+  cursor: pointer;
+}
+
+main {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+main #section-about {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+main #section-about-franchise:hover,
+main #section-about-store:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  border: 3px solid black;
+}
+
+main #section-about-mall {
+  text-align: center;
+}
+
+main #section-about-mall:hover {
+  cursor: pointer;
+}
+
+main #section-about-mall p {
+  font-size: 12px;
+  margin: 2rem;
+  width: 300px;
+  font-weight: 600;
+}
+
+main #section-about-mall ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+main #section-about-mall-Listletto,
+main #section-about-mall-eggmayo,
+main #section-about-mall-olive {
+  margin: 30px;
+  width: 70px;
+  text-align: center;
+}
+
+main #section-about-mall-Listletto span,
+main #section-about-mall-eggmayo span,
+main #section-about-mall-olive span {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+main #section-event {
+  margin: 20px 0 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+main #section-event-membership {
+  margin-right: 20px;
+}
+
+main #section-event-membership:hover,
+main #section-event-giftcard:hover {
+  cursor: pointer;
+}
+
+main #section-event-membership:hover img,
+main #section-event-giftcard:hover img {
+  opacity: .8;
+}
+
+main #section-etc {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #ba000b;
+  margin-top: 10px;
+}
+
+main #section-etc-1,
+main #section-etc-2,
+main #section-etc-3,
+main #section-etc-4 {
+  width: 100%;
+}
+
+main #section-etc-2-shortcuts,
+main #section-etc-1-shortcuts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+main #section-etc-2-shortcuts p,
+main #section-etc-1-shortcuts p {
+  margin-left: 5px;
+}
+
+main #section-etc-2-shortcuts:hover,
+main #section-etc-1-shortcuts:hover {
+  cursor: pointer;
+}
+
+main #section-etc-2-shortcuts:hover p,
+main #section-etc-1-shortcuts:hover p {
+  color: #a52a2a;
+}
+
+main #section-etc .etc-item {
+  margin-bottom: 10px;
+}
+
+main #section-etc .etc-item img {
+  cursor: pointer;
+}
+
+main #section-etc .etc-item img:hover {
+  opacity: 0.7;
+}
+
+main #section-etc .etc-4-display {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+main #section-etc .etc-4-display img {
+  padding: 0 20px 0 10px;
+}
+
+main #section-etc .etc-4-display img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+main #section-etc .etc-4-display span {
+  width: 50px;
+  margin-top: 10px;
+  display: block;
+  font-size: 12px;
+}
+
+main #section-etc .etc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+main #section-etc ul {
+  margin-right: 30px;
+}
+
+main #section-etc p {
+  line-height: 1.3rem;
+  color: #474747;
+}
+
+main #section-subtext {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+main #section-subtext p {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+main #section-subtext-img {
+  margin-left: 30px;
+}
+
+main #loader {
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  height: 20vh;
+  padding: 5rem 7rem 3rem 7rem;
+  background-color: #ba000b;
+  margin-top: 300px;
+}
+
+footer #logo-text-footer,
+footer #copyright {
+  width: 33%;
+  margin: auto;
+}
+
+footer #logo-text-footer {
+  font-size: 12px;
+  color: white;
+}
+
+footer #logo-text-footer:hover {
+  cursor: pointer;
+}
+
+footer #copyright {
+  margin-top: 30px;
+  color: white;
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=index.css.map */

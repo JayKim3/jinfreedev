@@ -19,9 +19,6 @@
   top: -80px;
 } */
 
-
-
-
 .jin-wrapper {
   max-width: 1280px;
   margin: 0 auto;
@@ -31,6 +28,7 @@
   position: relative;
   float: left;
   cursor: pointer;
+  margin-left: 30px;
 }
 
 .header__title {
@@ -64,14 +62,12 @@ li {
   display: flex;
   flex-direction: row;
   float: right;
-
 }
 
 .header__navi-btn {
   width: 45px;
   height: 30px;
   position: relative;
-
 }
 
 .header__navi i,

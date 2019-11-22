@@ -1,8 +1,27 @@
 .tetris-wrapper {
+    position: absolute;
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     text-align: center;
     color: white;
 
 }
+
+/* .escaperoom-wrapper .edge-wrap {
+    position: absolute;
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+} */
 
 .tetris-wrapper .edge-wrap {
     background-color: white;
@@ -39,6 +58,7 @@
     bottom: 10%;
     font-size: 30px;
     animation: startOpacity 1s infinite alternate-reverse;
+    z-index: 10;
 }
 
 .hide {
@@ -182,7 +202,7 @@
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
 
     .tetris-wrapper .edge-wrap {
         max-width: 350px;
@@ -200,22 +220,12 @@
     }
 }
 
-@media(max-width: 900px) {
-    .left-info {
-        width: 150px;
-    }
-
-    #next-table td {
-        border: 3px solid white;
-        width: 15px;
-        height: 15px;
-    }
-}
 
 
-@media(max-width:700px) {
+@media(max-width:768px) {
     .left-info {
         width: 100px;
+        margin-left: 20px;
     }
 
     #tetris td {
@@ -224,9 +234,20 @@
         height: 25px;
     }
 
+    .next-title {
+        float: left;
+    }
+
     #lines,
     #blocks,
     #times {
         width: 100px;
+        margin-left: 20px;
+    }
+}
+
+@media(max-width:700px) {
+    #leftInfo {
+        display: none;
     }
 }

@@ -3,6 +3,10 @@ main {
     margin: auto;
     margin-top: 50px;
 
+    @include mq("small-screen-3") {
+        width: 100%;
+    }
+
     #section-about {
         width: 100%;
         display: flex;
@@ -10,6 +14,8 @@ main {
 
         &-franchise,
         &-store {
+
+
             &:hover {
                 cursor: pointer;
                 transform: scale(1.1);

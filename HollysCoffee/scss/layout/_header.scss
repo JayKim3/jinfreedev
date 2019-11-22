@@ -6,6 +6,9 @@ header {
         display: flex;
         flex-direction: row;
 
+        @include mq('small-screen-3') {
+            width: 90%;
+        }
 
         &-menu,
         &-hollysmall,
@@ -21,12 +24,23 @@ header {
             flex-direction: column;
             cursor: pointer;
 
+            @include mq('small-screen-3') {
+                padding: 15px;
+                font-size: 15px;
+                font-weight: 500;
+                opacity: 0.5;
+            }
+
             span {
                 text-align: center;
                 font-size: 13px;
                 padding-top: 0.8rem;
                 color: $color-grey-dark;
                 opacity: 0;
+
+                @include mq('small-screen-3') {
+                    font-size: 10px;
+                }
             }
 
             &:hover {
@@ -41,10 +55,20 @@ header {
         }
     }
 
-    #section-bg {
-        border-top: 2px solid $color-red-light;
+    #mainBanner img {
+        width: 1680px;
         cursor: pointer;
+
+        @include mq('small-screen-1') {
+            width: 1200px;
+        }
+
+        @include mq('small-screen-2') {
+            width: 899px;
+        }
+
+        @include mq('small-screen-3') {
+            width: 600px;
+        }
     }
-
-
 }

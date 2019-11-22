@@ -3,9 +3,21 @@
 }
 
 #gnb {
-    width: 60%;
+    width: 70%;
     height: 15vh;
     margin: auto;
+
+    @include mq('small-screen-1') {
+        width: 80%;
+    }
+
+    @include mq('small-screen-2') {
+        width: 90%;
+    }
+
+    @include mq('small-screen-3') {
+        width: 100%;
+    }
 
     #gnb-logo {
         position: absolute;
@@ -15,7 +27,12 @@
         top: 0;
         bottom: 0;
         cursor: pointer;
+
+        @include mq('small-screen-3') {
+            left: 50%;
+        }
     }
+
 
 
     &-text {
@@ -70,6 +87,14 @@
             flex-direction: row;
             color: $color-grey-dark;
             opacity: 0.7;
+
+            @include mq('small-screen-3') {
+                left: 60%;
+
+                p {
+                    font-size: 8px;
+                }
+            }
 
             &-membershipLogin,
             &-membershipSignup,

@@ -8,7 +8,13 @@
       margin-top: 60px;
     }
 
-    .project__portfolio {
+    .project__portfolio,
+    .project__portfolio-marvel,
+    .project__portfolio-escaperoom,
+    .project__portfolio-tetris,
+    .project__portfolio-hollyscoffee,
+    .project__portfolio-reorder,
+    .project__portfolio-swot {
       padding: 10px 0;
     }
 
@@ -19,8 +25,8 @@
 
     .portfolio-title {
       color: white;
-      border-bottom: 2px solid;
-      text-align: left;
+      margin-bottom: 15px;
+      text-align: center;
       padding-top: 15px;
     }
 
@@ -42,15 +48,20 @@
       bottom: 0;
       left: 0;
       right: 0;
-      opacity: 0.6;
+      opacity: 1.0;
       transition: 0.5s;
     }
 
     .portfolio-list-bg:hover {
-      opacity: 1.0;
+      opacity: 0.7;
     }
 
-    .portfolio-list-title {
+    .portfolio-list-title,
+    .portfolio-list-title-marvel,
+    .portfolio-list-title-escaperoom,
+    .portfolio-list-title-tetris,
+    .portfolio-list-title-hollyscoffee,
+    .portfolio-list-title-reorder {
       position: absolute;
       max-width: 500px;
       line-height: 40px;
@@ -61,12 +72,53 @@
       z-index: 10;
     }
 
+    .portfolio-list-title-swot {
+      position: absolute;
+      max-width: 500px;
+      line-height: 40px;
+      bottom: 15px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 10;
+      color: black;
+    }
+
     .portfolio-list-tab {
       position: absolute;
-      padding: 4px 8px;
+      padding: 4px 6px;
+      border-radius: 75px;
+      top: 0;
+      left: auto;
       background-color: #c1ccd3;
       color: #333;
       font-size: 1rem;
       font-weight: 700;
       margin: 30px 0 0 0;
+    }
+
+    @media(max-width:1400px) {
+      .contents-wrapper {
+        max-width: 1000px;
+      }
+    }
+
+    @media(max-width:1080px) {
+      .contents-wrapper {
+        max-width: 700px;
+      }
+
+      .portfolio-title {
+        font-size: 2rem;
+      }
+    }
+
+    @media(max-width:768px) {
+      .contents-wrapper {
+        max-width: 450px;
+      }
+
+      .portfolio-title {
+        font-size: 1.5rem;
+      }
     }

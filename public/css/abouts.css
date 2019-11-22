@@ -246,6 +246,10 @@
     width: 100%;
 }
 
+.about-navigation.animation {
+    animation: disappear 2s;
+}
+
 
 @keyframes downbtn {
     0% {
@@ -254,5 +258,47 @@
 
     100% {
         opacity: .6;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media(max-width:1400px) {
+    #character {
+        animation: disappear 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .about-navigation {
+        animation: disappear 1s;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+@media(max-width: 768px) {
+    .Iam-subtext-paragraph-1>p {
+        font-size: 1rem;
+        font-weight: 200;
+    }
+}
+
+@media(max-width:520px) {
+    .Iam-subtext-paragraph-1>p {
+        font-size: 0.8rem;
+        font-weight: 200;
+    }
+
+    .Iam-subtext-paragraph-2>p {
+        font-size: 0.8rem;
+        font-weight: 200;
     }
 }

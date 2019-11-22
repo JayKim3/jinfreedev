@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300|Nanum+Gothic:400,700,800&display=swap&subset=korean");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-
 ul {
   list-style: none;
 }
@@ -9,7 +8,7 @@ ul {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -17,7 +16,7 @@ html {
 }
 
 body {
-  background-color: white;
+  padding: 3rem;
   font-family: 'Nanum Gothic', sans-serif;
 }
 
@@ -29,18 +28,16 @@ ul {
   0% {
     opacity: .1;
     -webkit-transform: translateX(-8rem);
-    transform: translateX(-8rem);
+            transform: translateX(-8rem);
   }
-
   80% {
     -webkit-transform: translateX(1rem);
-    transform: translateX(1rem);
+            transform: translateX(1rem);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
-    transform: translate(0);
+            transform: translate(0);
   }
 }
 
@@ -48,18 +45,16 @@ ul {
   0% {
     opacity: .1;
     -webkit-transform: translateX(-8rem);
-    transform: translateX(-8rem);
+            transform: translateX(-8rem);
   }
-
   80% {
     -webkit-transform: translateX(1rem);
-    transform: translateX(1rem);
+            transform: translateX(1rem);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
-    transform: translate(0);
+            transform: translate(0);
   }
 }
 
@@ -67,18 +62,16 @@ ul {
   0% {
     opacity: .1;
     -webkit-transform: translateX(10rem);
-    transform: translateX(10rem);
+            transform: translateX(10rem);
   }
-
   80% {
     -webkit-transform: translateX(-1rem);
-    transform: translateX(-1rem);
+            transform: translateX(-1rem);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
-    transform: translate(0);
+            transform: translate(0);
   }
 }
 
@@ -86,18 +79,16 @@ ul {
   0% {
     opacity: .1;
     -webkit-transform: translateX(10rem);
-    transform: translateX(10rem);
+            transform: translateX(10rem);
   }
-
   80% {
     -webkit-transform: translateX(-1rem);
-    transform: translateX(-1rem);
+            transform: translateX(-1rem);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
-    transform: translate(0);
+            transform: translate(0);
   }
 }
 
@@ -105,7 +96,6 @@ ul {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -115,7 +105,6 @@ ul {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -124,24 +113,22 @@ ul {
 @-webkit-keyframes big {
   from {
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
   }
-
   to {
     -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
 @keyframes big {
   from {
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
   }
-
   to {
     -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
@@ -150,9 +137,27 @@ ul {
 }
 
 #gnb {
-  width: 60%;
+  width: 70%;
   height: 15vh;
   margin: auto;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  #gnb {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 899px) {
+  #gnb {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #gnb {
+    width: 100%;
+  }
 }
 
 #gnb #gnb-logo {
@@ -165,6 +170,12 @@ ul {
   cursor: pointer;
 }
 
+@media screen and (max-width: 700px) {
+  #gnb #gnb-logo {
+    left: 50%;
+  }
+}
+
 #gnb-text {
   position: relative;
   display: -webkit-box;
@@ -172,8 +183,8 @@ ul {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #gnb-text-left {
@@ -188,8 +199,8 @@ ul {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #gnb-text-left-family_owned {
@@ -206,13 +217,11 @@ ul {
   cursor: pointer;
 }
 
-#gnb-text-left-family_owned:hover,
-#gnb-text-left-academy:hover,
-#gnb-text-left-companyEdition:hover {
+#gnb-text-left-family_owned:hover, #gnb-text-left-academy:hover, #gnb-text-left-companyEdition:hover {
   -webkit-animation-name: big;
-  animation-name: big;
+          animation-name: big;
   -webkit-animation: big 1s;
-  animation: big 1s;
+          animation: big 1s;
 }
 
 #gnb-text-right {
@@ -228,32 +237,33 @@ ul {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   color: #474747;
   opacity: 0.7;
 }
 
-#gnb-text-right-membershipLogin,
-#gnb-text-right-membershipSignup,
-#gnb-text-right-customerService,
-#gnb-text-right-eng,
-#gnb-text-right-chineese {
+@media screen and (max-width: 700px) {
+  #gnb-text-right {
+    left: 60%;
+  }
+  #gnb-text-right p {
+    font-size: 8px;
+  }
+}
+
+#gnb-text-right-membershipLogin, #gnb-text-right-membershipSignup, #gnb-text-right-customerService, #gnb-text-right-eng, #gnb-text-right-chineese {
   margin-left: 10px;
   font-size: 13px;
   font-weight: 700;
   cursor: pointer;
 }
 
-#gnb-text-right-membershipLogin:hover,
-#gnb-text-right-membershipSignup:hover,
-#gnb-text-right-customerService:hover,
-#gnb-text-right-eng:hover,
-#gnb-text-right-chineese:hover {
+#gnb-text-right-membershipLogin:hover, #gnb-text-right-membershipSignup:hover, #gnb-text-right-customerService:hover, #gnb-text-right-eng:hover, #gnb-text-right-chineese:hover {
   -webkit-animation-name: big;
-  animation-name: big;
+          animation-name: big;
   -webkit-animation: big 1s;
-  animation: big 1s;
+          animation: big 1s;
   color: #000;
 }
 
@@ -270,8 +280,8 @@ ul {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #gnb_layer ul {
@@ -292,16 +302,17 @@ header #header-text {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-header #header-text-menu,
-header #header-text-hollysmall,
-header #header-text-membership,
-header #header-text-hollysnews,
-header #header-text-store,
-header #header-text-hollysis {
+@media screen and (max-width: 700px) {
+  header #header-text {
+    width: 90%;
+  }
+}
+
+header #header-text-menu, header #header-text-hollysmall, header #header-text-membership, header #header-text-hollysnews, header #header-text-store, header #header-text-hollysis {
   padding: 30px;
   font-size: 20px;
   font-weight: 700;
@@ -311,17 +322,21 @@ header #header-text-hollysis {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   cursor: pointer;
 }
 
-header #header-text-menu span,
-header #header-text-hollysmall span,
-header #header-text-membership span,
-header #header-text-hollysnews span,
-header #header-text-store span,
-header #header-text-hollysis span {
+@media screen and (max-width: 700px) {
+  header #header-text-menu, header #header-text-hollysmall, header #header-text-membership, header #header-text-hollysnews, header #header-text-store, header #header-text-hollysis {
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.5;
+  }
+}
+
+header #header-text-menu span, header #header-text-hollysmall span, header #header-text-membership span, header #header-text-hollysnews span, header #header-text-store span, header #header-text-hollysis span {
   text-align: center;
   font-size: 13px;
   padding-top: 0.8rem;
@@ -329,36 +344,56 @@ header #header-text-hollysis span {
   opacity: 0;
 }
 
-header #header-text-menu:hover,
-header #header-text-hollysmall:hover,
-header #header-text-membership:hover,
-header #header-text-hollysnews:hover,
-header #header-text-store:hover,
-header #header-text-hollysis:hover {
+@media screen and (max-width: 700px) {
+  header #header-text-menu span, header #header-text-hollysmall span, header #header-text-membership span, header #header-text-hollysnews span, header #header-text-store span, header #header-text-hollysis span {
+    font-size: 10px;
+  }
+}
+
+header #header-text-menu:hover, header #header-text-hollysmall:hover, header #header-text-membership:hover, header #header-text-hollysnews:hover, header #header-text-store:hover, header #header-text-hollysis:hover {
   background-color: #ba000b;
 }
 
-header #header-text-menu:hover span,
-header #header-text-hollysmall:hover span,
-header #header-text-membership:hover span,
-header #header-text-hollysnews:hover span,
-header #header-text-store:hover span,
-header #header-text-hollysis:hover span {
+header #header-text-menu:hover span, header #header-text-hollysmall:hover span, header #header-text-membership:hover span, header #header-text-hollysnews:hover span, header #header-text-store:hover span, header #header-text-hollysis:hover span {
   -webkit-animation-name: fadein;
-  animation-name: fadein;
+          animation-name: fadein;
   -webkit-animation: fadein 1s;
-  animation: fadein 1s;
+          animation: fadein 1s;
 }
 
-header #section-bg {
-  border-top: 2px solid #ba000b;
+header #mainBanner img {
+  width: 1680px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  header #mainBanner img {
+    width: 1200px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 899px) {
+  header #mainBanner img {
+    width: 899px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header #mainBanner img {
+    width: 600px;
+  }
 }
 
 main {
   width: 50%;
   margin: auto;
   margin-top: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    width: 100%;
+  }
 }
 
 main #section-about {
@@ -368,15 +403,14 @@ main #section-about {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-main #section-about-franchise:hover,
-main #section-about-store:hover {
+main #section-about-franchise:hover, main #section-about-store:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
   border: 3px solid black;
 }
 
@@ -401,21 +435,17 @@ main #section-about-mall ul {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-main #section-about-mall-Listletto,
-main #section-about-mall-eggmayo,
-main #section-about-mall-olive {
+main #section-about-mall-Listletto, main #section-about-mall-eggmayo, main #section-about-mall-olive {
   margin: 30px;
   width: 70px;
   text-align: center;
 }
 
-main #section-about-mall-Listletto span,
-main #section-about-mall-eggmayo span,
-main #section-about-mall-olive span {
+main #section-about-mall-Listletto span, main #section-about-mall-eggmayo span, main #section-about-mall-olive span {
   display: inline-block;
   margin-left: 10px;
   font-size: 12px;
@@ -428,21 +458,19 @@ main #section-event {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 main #section-event-membership {
   margin-right: 20px;
 }
 
-main #section-event-membership:hover,
-main #section-event-giftcard:hover {
+main #section-event-membership:hover, main #section-event-giftcard:hover {
   cursor: pointer;
 }
 
-main #section-event-membership:hover img,
-main #section-event-giftcard:hover img {
+main #section-event-membership:hover img, main #section-event-giftcard:hover img {
   opacity: .8;
 }
 
@@ -452,36 +480,29 @@ main #section-etc {
   margin-top: 10px;
 }
 
-main #section-etc-1,
-main #section-etc-2,
-main #section-etc-3,
-main #section-etc-4 {
+main #section-etc-1, main #section-etc-2, main #section-etc-3, main #section-etc-4 {
   width: 100%;
 }
 
-main #section-etc-2-shortcuts,
-main #section-etc-1-shortcuts {
+main #section-etc-2-shortcuts, main #section-etc-1-shortcuts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-main #section-etc-2-shortcuts p,
-main #section-etc-1-shortcuts p {
+main #section-etc-2-shortcuts p, main #section-etc-1-shortcuts p {
   margin-left: 5px;
 }
 
-main #section-etc-2-shortcuts:hover,
-main #section-etc-1-shortcuts:hover {
+main #section-etc-2-shortcuts:hover, main #section-etc-1-shortcuts:hover {
   cursor: pointer;
 }
 
-main #section-etc-2-shortcuts:hover p,
-main #section-etc-1-shortcuts:hover p {
+main #section-etc-2-shortcuts:hover p, main #section-etc-1-shortcuts:hover p {
   color: #a52a2a;
 }
 
@@ -504,8 +525,8 @@ main #section-etc .etc-4-display {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 main #section-etc .etc-4-display img {
@@ -515,7 +536,7 @@ main #section-etc .etc-4-display img {
 main #section-etc .etc-4-display img:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 main #section-etc .etc-4-display span {
@@ -531,8 +552,8 @@ main #section-etc .etc {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 main #section-etc ul {
@@ -551,8 +572,8 @@ main #section-subtext {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 main #section-subtext p {
@@ -569,8 +590,6 @@ main #loader {
 }
 
 footer {
-  width: 100%;
-  height: 20vh;
   padding: 5rem 7rem 3rem 7rem;
   background-color: #ba000b;
   margin-top: 300px;
@@ -596,5 +615,4 @@ footer #copyright {
   color: white;
   opacity: 0.5;
 }
-
 /*# sourceMappingURL=index.css.map */

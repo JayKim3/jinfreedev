@@ -16,7 +16,6 @@ $(document).ready(function () {
     $('.about-page').delay(500).removeClass('black', 1000);
     $('.canvas-character ').removeClass('hide', 500);
     characterDraw();
-    $('.about-Iam-bg').delay(1200).removeClass('hide', 1000);
     $('.Iam-names').delay(200).removeClass('hide', 1500);
     $('.about-navigation').delay(1800).removeClass('hide', 500);
 });

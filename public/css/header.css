@@ -14,6 +14,8 @@
   padding: 8px 0;
 }
 
+
+
 /* 
 .header.hide {
   top: -80px;
@@ -76,9 +78,7 @@ li {
   font-size: 20px;
 }
 
-.header__navi-btn.design-btn {
-  left: 5px;
-}
+
 
 .header__navi-btn-popup {
   position: absolute;

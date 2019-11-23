@@ -183,7 +183,6 @@ $(window).scroll(function () {
                 if (nowScroll > start + 1000) {
                     $introduce.text('사람을 좋아합니다');
                 }
-
             }
 
             // Experiences 페이지 이벤트 ---------------------------------------------------------

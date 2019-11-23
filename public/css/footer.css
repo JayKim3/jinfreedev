@@ -1,0 +1,93 @@
+/* 푸터 */
+footer {
+    background-color: black;
+    font-size: 1rem;
+}
+
+.footer-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #485561;
+    color: #b2bbc3;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-name span {
+    margin-right: 24px;
+}
+
+.footer-name span::after {
+    content: "|";
+    margin: 0 0 0 24px;
+    color: #485561;
+}
+
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+}
+
+.blog a {
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.email {
+    display: flex;
+}
+
+.email a img {
+    width: 28px;
+    opacity: 0.6;
+}
+
+.email a:hover img {
+    opacity: 1;
+}
+
+.email a+a {
+    margin-left: 15px;
+}
+
+.footer-content {
+    color: #b2bbc3;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.footer-content span {
+    display: inline;
+    margin: 0 10px 0 0;
+    color: #647586;
+    font-size: 12px;
+}
+
+.footer-content strong {
+    color: #b2bbc3;
+    font-weight: 400;
+}
+
+.footer-content span::after {
+    content: " |";
+    display: inline-block;
+    padding-left: 25px;
+    color: #485561;
+}
+
+.footer-content span:nth-child(4)::after {
+    display: none;
+}
+
+.copyright {
+    margin-top: 5px;
+}

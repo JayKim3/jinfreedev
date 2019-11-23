@@ -6,6 +6,9 @@
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   width: 100%;
   height: 100%;
   opacity: 0.8;
@@ -29,6 +32,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+
 }
 
 .skills-info-left {
@@ -40,7 +44,6 @@
 .skills-info-left>p,
 .skills-info-right>p {
   font-size: 2rem;
-  text-align: center;
 }
 
 .skills-info-right {
@@ -51,8 +54,8 @@
 
 .experienced-skills {
   margin: 20px;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
 }
 
 .experienced-skill-row {
@@ -62,33 +65,30 @@
 
 @media (max-width: 1080px) {
   .skills-info-left {
-    padding: 20px;
     height: 600px;
   }
 
   .skills-info-right {
-    padding: 20px;
     height: 300px;
   }
 
   .skills-info-left>p,
   .skills-info-right>p {
-    text-align: left;
     font-size: 1.5rem;
   }
 
   .experienced-skills {
-    margin: 10px;
+    margin: 15px;
   }
 }
 
 @media (max-width: 768px) {
   .skills-info-left {
-    height: 500px;
+    height: 400px;
   }
 
   .experienced-skills {
-    margin: 0;
+    margin: 5px;
   }
 
   .skills-info-left>p,

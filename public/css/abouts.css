@@ -82,48 +82,45 @@
 }
 
 .Iam-names {
-    width: 240px;
     height: 100px;
-    margin: 0 auto;
     font-size: 3rem;
-    text-align: left;
     position: absolute;
-    margin-left: 10px;
-    top: 50%;
-    left: 50%;
-    line-height: 70px;
-    transform: translate(-50%, -50%);
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 .Iam-names.hide {
     opacity: 0;
-    margin-top: 30px;
 }
 
 .Iam-names-kor {
     font-family: 'Source Sans Pro', sans-serif;
-    margin-left: 15px;
     font-weight: 300;
-
 }
 
 .Iam-names-eng {
     font-family: "Lobster", cursive;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #777;
 }
 
 .canvas-character {
     position: absolute;
-    top: 30%;
-    left: 70%;
+    margin: 200px 50px 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     /* background-color: #191a1c;
     border: 1px solid black; */
 }
 
 .Iam-subtext {
-    width: 500px;
+    width: 400px;
     height: auto;
     font-size: 4rem;
     font-weight: 200;

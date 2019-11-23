@@ -170,14 +170,12 @@ $(window).scroll(function () {
                 $('.Iam-subtext').addClass('clear-display');
                 if (nowScroll > start + 200) {
                     $introduce.text('긍정적입니다');
-                    $Iam.animate({ "font-size": "4rem" }, 3000);
-                    $introduce.animate({ "font-size": "4rem" }, 3000);
                 }
                 if (nowScroll > start + 400) {
                     $introduce.text('비흡연자입니다');
                 }
                 if (nowScroll > start + 600) {
-                    $introduce.text('술보단 커피입니다');
+                    $introduce.text('커피를 좋아합니다');
                 }
                 if (nowScroll > start + 800) {
                     $introduce.text('미식가입니다');

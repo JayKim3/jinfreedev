@@ -37,7 +37,7 @@
 
 .skills-info-left {
   width: 50%;
-  height: 600px;
+  height: 450px;
   padding: 50px;
 }
 
@@ -48,7 +48,7 @@
 
 .skills-info-right {
   width: 50%;
-  height: 600px;
+  height: 450px;
   padding: 50px;
 }
 
@@ -64,13 +64,6 @@
 }
 
 @media (max-width: 1080px) {
-  .skills-info-left {
-    height: 600px;
-  }
-
-  .skills-info-right {
-    height: 300px;
-  }
 
   .skills-info-left>p,
   .skills-info-right>p {
@@ -84,7 +77,11 @@
 
 @media (max-width: 768px) {
   .skills-info-left {
-    height: 400px;
+    height: 300px;
+  }
+
+  .skills-info-right {
+    height: 200px;
   }
 
   .experienced-skills {

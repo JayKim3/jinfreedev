@@ -1,5 +1,6 @@
 .gnb-wrapper {
     bottom: 0;
+    overflow-y: hidden;
 }
 
 ul,
@@ -53,7 +54,7 @@ li {
 }
 
 .gnb-wrapper .gnb-nav .menu_item:nth-child(3):after {
-    content: 'Go to Github'
+    content: 'Go to Resume'
 }
 
 .gnb-wrapper .gnb-nav .menu_item:hover {
@@ -110,4 +111,68 @@ li {
     display: inline-block;
     color: white;
     font-size: 100%;
+}
+
+@media(max-width:1200px) {
+    .gnb-wrapper .gnb-nav {
+        margin-top: 3em;
+    }
+
+    .gnb-wrapper .gnb-nav .menu_item:nth-child(2) {
+        margin-top: 50px;
+    }
+
+    .gnb-wrapper .gnb-nav .menu_item:nth-child(3) {
+        margin-top: 50px;
+    }
+
+    .contact {
+        bottom: 1.5rem;
+    }
+
+}
+
+@media(max-width:1080px) {
+    .contact {
+        bottom: -5rem;
+    }
+}
+
+
+@media(max-width:768px) {
+    .contact {
+        bottom: -3rem;
+    }
+
+    .gnb-wrapper .gnb-nav .menu_item a {
+        font-size: 1.5rem;
+    }
+
+    .contact .contact_title {
+        font-size: 0.8rem;
+    }
+
+    .contact .contact_info {
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:500px) {
+    .contact {
+        bottom: -5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gnb-wrapper .gnb-nav .menu_item a {
+        font-size: 1rem;
+    }
+
+    .contact .contact_title {
+        font-size: 0.6rem;
+    }
+
+    .contact .contact_info {
+        font-size: 0.6rem;
+    }
 }

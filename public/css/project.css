@@ -14,7 +14,9 @@
     .project__portfolio-tetris,
     .project__portfolio-hollyscoffee,
     .project__portfolio-reorder,
-    .project__portfolio-swot {
+    .project__portfolio-reactstudy,
+    .project__portfolio-swot,
+    .portfolio-list-bg-sjinmv {
       padding: 10px 0;
     }
 
@@ -40,7 +42,14 @@
       box-shadow: 3px 3px 3px 3px gray;
     }
 
-    .portfolio-list-bg {
+    .portfolio-list-bg-marvel,
+    .portfolio-list-bg-escaperoom,
+    .portfolio-list-bg-tetris,
+    .portfolio-list-bg-reorder,
+    .portfolio-list-bg-hollyscoffee,
+    .portfolio-list-bg-swot,
+    .portfolio-list-bg-reactstudy,
+    .portfolio-list-bg-sjinmv {
       background-position: center;
       background-size: cover;
       position: absolute;
@@ -52,7 +61,14 @@
       transition: 0.5s;
     }
 
-    .portfolio-list-bg:hover {
+    .portfolio-list-bg-marvel:hover,
+    .portfolio-list-bg-escaperoom:hover,
+    .portfolio-list-bg-tetris:hover,
+    .portfolio-list-bg-reorder:hover,
+    .portfolio-list-bg-hollyscoffee:hover,
+    .portfolio-list-bg-swot:hover,
+    .portfolio-list-bg-reactstudy:hover,
+    .portfolio-list-bg-sjinmv:hover {
       opacity: 0.7;
     }
 
@@ -61,27 +77,19 @@
     .portfolio-list-title-escaperoom,
     .portfolio-list-title-tetris,
     .portfolio-list-title-hollyscoffee,
-    .portfolio-list-title-reorder {
+    .portfolio-list-title-reactstudy,
+    .portfolio-list-title-reorder,
+    .portfolio-list-title-swot,
+    .portfolio-list-title-sjinmv {
       position: absolute;
       max-width: 500px;
       line-height: 40px;
       bottom: 15px;
+      font-size: 1.3rem;
       left: 0;
       right: 0;
       margin: auto;
       z-index: 10;
-    }
-
-    .portfolio-list-title-swot {
-      position: absolute;
-      max-width: 500px;
-      line-height: 40px;
-      bottom: 15px;
-      left: 0;
-      right: 0;
-      margin: auto;
-      z-index: 10;
-      color: black;
     }
 
     .portfolio-list-tab {
@@ -111,6 +119,24 @@
       .portfolio-title {
         font-size: 2rem;
       }
+
+      .portfolio-list-tab {
+        font-size: 0.8rem;
+        font-weight: 500;
+      }
+
+      .portfolio-list-title,
+      .portfolio-list-title-marvel,
+      .portfolio-list-title-escaperoom,
+      .portfolio-list-title-tetris,
+      .portfolio-list-title-hollyscoffee,
+      .portfolio-list-title-reactstudy,
+      .portfolio-list-title-reorder,
+      .portfolio-list-title-swot,
+      .portfolio-list-title-sjinmv {
+        font-size: 1.2rem;
+        line-height: 30px;
+      }
     }
 
     @media(max-width:768px) {
@@ -120,5 +146,23 @@
 
       .portfolio-title {
         font-size: 1.5rem;
+      }
+
+      .portfolio-list-tab {
+        font-size: 0.6rem;
+
+      }
+
+      .portfolio-list-title,
+      .portfolio-list-title-marvel,
+      .portfolio-list-title-escaperoom,
+      .portfolio-list-title-tetris,
+      .portfolio-list-title-hollyscoffee,
+      .portfolio-list-title-reactstudy,
+      .portfolio-list-title-reorder,
+      .portfolio-list-title-swot,
+      .portfolio-list-title-sjinmv {
+        font-size: 1rem;
+        line-height: 20px;
       }
     }

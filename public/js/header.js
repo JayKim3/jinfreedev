@@ -1,4 +1,3 @@
-// class -> . , id -> #
 $('.gnb-btn').magnificPopup({
     type: 'iframe',
     items: {

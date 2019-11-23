@@ -67,9 +67,15 @@
     padding: 0;
 }
 
-.about-Iam-bg {
-    width: 100%;
-    height: 1000px;
+.about-Iam-bg:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     background-image: url(../images/sampleIam.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -91,6 +97,7 @@
     right: 0;
     bottom: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    z-index: 10;
 }
 
 .Iam-names.hide {

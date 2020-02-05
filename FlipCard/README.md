@@ -33,6 +33,7 @@
 
 <img width="691" alt="Screen Shot 2020-02-05 at 7 50 36 PM" src="https://user-images.githubusercontent.com/45479309/73849249-f3130800-486c-11ea-9eff-fe2194af2acf.png">
 
+---
 
 #### 완료 화면
 

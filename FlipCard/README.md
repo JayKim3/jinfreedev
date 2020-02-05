@@ -18,6 +18,22 @@
 
 #### 초기화면
 
+<img width="728" alt="Screen Shot 2020-02-05 at 7 50 10 PM" src="https://user-images.githubusercontent.com/45479309/73849027-8992f980-486c-11ea-887c-ab06370aedb5.png">
+
+
 #### 작동 화면
 
+<img width="708" alt="Screen Shot 2020-02-05 at 7 51 49 PM" src="https://user-images.githubusercontent.com/45479309/73849120-afb89980-486c-11ea-83fc-10323261c549.png">
+
+---
+
+<img width="718" alt="Screen Shot 2020-02-05 at 7 50 27 PM" src="https://user-images.githubusercontent.com/45479309/73849184-d8409380-486c-11ea-9ab4-adb6e1038528.png">
+
+---
+
+<img width="691" alt="Screen Shot 2020-02-05 at 7 50 36 PM" src="https://user-images.githubusercontent.com/45479309/73849249-f3130800-486c-11ea-9eff-fe2194af2acf.png">
+
+
 #### 완료 화면
+
+<img width="658" alt="Screen Shot 2020-02-05 at 7 52 04 PM" src="https://user-images.githubusercontent.com/45479309/73849283-058d4180-486d-11ea-8b9e-9dead8ba0d71.png">

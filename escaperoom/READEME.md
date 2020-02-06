@@ -39,6 +39,23 @@
 
 ### 시작 화면
 
+<img width="1231" alt="Screen Shot 2020-02-06 at 9 49 28 AM" src="https://user-images.githubusercontent.com/45479309/73897470-87ab5380-48c9-11ea-9ac0-9529cc498a98.png">
+
+---
+
 ### 진행 화면
 
+<img width="1300" alt="Screen Shot 2020-02-06 at 10 09 32 AM" src="https://user-images.githubusercontent.com/45479309/73897517-ac9fc680-48c9-11ea-93db-5f67f73d801a.png">
+
+---
+
+<img width="1280" alt="Screen Shot 2020-02-06 at 10 09 54 AM" src="https://user-images.githubusercontent.com/45479309/73897521-af9ab700-48c9-11ea-892e-d68515255185.png">
+
+---
+
+<img width="1265" alt="Screen Shot 2020-02-06 at 10 10 49 AM" src="https://user-images.githubusercontent.com/45479309/73897525-b1647a80-48c9-11ea-9cc9-7908185078fe.png">
+
 ### 종료 화면
+
+<img width="1280" alt="Screen Shot 2020-02-06 at 9 51 09 AM" src="https://user-images.githubusercontent.com/45479309/73897490-998cf680-48c9-11ea-9820-a2b83a10fcd4.png">
+

@@ -50,4 +50,3 @@
 
 7. 일곱 번째 프로젝트 - `개인적으로` 기획부터 시작하여 프론트,백을 혼자서 만들어 보는 경험을 위해 Express Framework와 React, MongoDB, TypeScript를 사용하여 개발 예정 (기획 80% 완료 .. DB 설계 중 - 2019.11.25 ~ 진행중)
 
-SWOT Project video : https://jaykim3.github.io/jinfreedev/public/html/video.html

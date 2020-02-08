@@ -41,17 +41,11 @@
 
 <img width="1231" alt="Screen Shot 2020-02-06 at 9 49 28 AM" src="https://user-images.githubusercontent.com/45479309/73897470-87ab5380-48c9-11ea-9ac0-9529cc498a98.png">
 
-- 클래스로 요소들을 추가하고 제거함으로써 각 배경 이미지를 다루었으며 마우스로 클릭하였을 때 초기화면이 천천히 사라짐과 동시에 스테이지가 시작되도록 구현하였다.
-
-- 시작과 동시에 시간타이머를 두어 돔 객체의 getElementById로 가져와 innerHTML을 계속해서 setTimeout 되도록 하였다.
-
 ---
 
 ### 진행 화면
 
 <img width="1300" alt="Screen Shot 2020-02-06 at 10 09 32 AM" src="https://user-images.githubusercontent.com/45479309/73897517-ac9fc680-48c9-11ea-93db-5f67f73d801a.png">
-
-- 오른쪽에는 총 4개의 인벤토리에 대한 offsetX,offsetY로 아이템들을 제어하였으며 2번 인벤토리를 클릭하였을 때, 해당 카드에 대한 내용을 볼 수 있도록 이미지를 바꾸었다. ( 마찬가지로 다른 인벤토리를 클릭하거나 해당 아이템으로 어떤 물건을 클릭할때도 똑같은 방식으로 구현하였다.)
 
 ---
 
@@ -59,44 +53,9 @@
 
 ---
 
-- 금고에서 번호를 클릭하였을 때 그에 대한 이미지인데 가장 까다롭고 코드가 깔끔하지 못한다고 생각한다.. 우선 기능을 위주로 생각하여 구현을하였지만 1번부터 9번까지에 번호에 대한 클릭 이벤트를 if문으로 모두 분기처리하여 해당 금고의 번호가 바뀌도록 구현을 하였다.
-
-- 금고 번호가 틀릴 시에는 다시 번호를 리셋시켰으며 맞추었을 때는 이미지가 바뀌도록 구현ㄴ
-
 <img width="1265" alt="Screen Shot 2020-02-06 at 10 10 49 AM" src="https://user-images.githubusercontent.com/45479309/73897525-b1647a80-48c9-11ea-9cc9-7908185078fe.png">
-
-- 방을 탈출하기 위한 마지막 열쇠를 얻은 장면으로, 해당 열쇠를 클릭 후 방문을 클릭 시 탈출되도록 함수를 구현하였다. 마찬가지로 offsetX와 offsetY로 간단하게 처리하였다.
-
-- 탈출함과 동시에 시간은 멈추도록 clearInterval함수로 timer를 파라미터로 전달해주었다.
-
-```javascript
-function escape() {
-  const escapeText = document.getElementById("complete");
-
-  stage1bg.addEventListener("click", function(e) {
-    let x = e.offsetX;
-    let y = e.offsetY;
-
-    // offsetX : 245,300 offsetY : 250,340
-    if (x >= 850 && x <= 985 && y >= 150 && y <= 445 && escapeFlag) {
-      stage1bg.classList.remove("secondkey");
-      stage1bg.classList.add("escape");
-      escapeText.innerHTML = "Escape Success";
-      clearInterval(timer);
-      document.getElementById("times").innerHTML = "Clear";
-    }
-  });
-}
-```
 
 ### 종료 화면
 
 <img width="1280" alt="Screen Shot 2020-02-06 at 9 51 09 AM" src="https://user-images.githubusercontent.com/45479309/73897490-998cf680-48c9-11ea-9820-a2b83a10fcd4.png">
 
-- 게임이 종료되었을 때는 간단히 중앙에 텍스트가 띄워지도록 구현하였다.
-
----
-
-### 개발 후기
-
-코드를 구현하는데에는 많이 어렵지 않았다. offsetX와 offsetY의 좌표 값으로 거의 모든 기능들을 제어 하였다. 생각보다 예외 상황들이 있어 변수들을 많이 사용하였으며 가장 까다로웠던 점은 금고 번호를 선택하는 부분에서 if문으로 모두 분기처리 하다보니 코드도 길어져 더 깔금하게 코드를 작성할순 없을까 고민을 해보았다.

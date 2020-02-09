@@ -48,5 +48,8 @@
 
 6. 여섯 번째 프로젝트 - `교내 팀 프로젝트` SWOT (마지막 학기 수업으로 수업 보다는 `프로젝트 경험`이 더 중요하다고 생각하여 타 학과 졸업 프로젝트 수업을 들음 ( `총 4명` 에서 팀을 이루었으며 `웹(Next.js)`, 서버(스프링), 앱(안드로이드)를 개발하였으며 저는 전반적인 기획과 웹 부분을 전담하여 담당했습니다.) - 기능 구현 완성 , 에러 처리 및 리팩토링 중
 
-7. 일곱 번째 프로젝트 - `개인적으로` 기획부터 시작하여 프론트,백을 혼자서 만들어 보는 경험을 위해 Express Framework와 React, MongoDB, TypeScript를 사용하여 개발 예정 (기획 80% 완료 .. DB 설계 중 - 2019.11.25 ~ 진행중)
+7. 일곱 번째 프로젝트 - `개인적으로` 기획부터 시작하여 프론트,백을 혼자서 만들어 보는 경험을 위해 Express Framework와 React, MongoDB, TypeScript를 사용하여 개발 예정 (기획 80% 완료 .. DB 설계 중 - 2019.11.25 ~ 진행중
 
+link to site : https://jaykim3.github.io/jinfreedev/public/html/video.html
+
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQu9289DsMsb13RMUQULL68mrApnUIRrhHmRFb8WQ5cF6r1HdQ2rZ-TbkabyQ_OtKoTfYn6qCIUQ38T/pubchart?oid=435980013&amp;format=interactive"></iframe>

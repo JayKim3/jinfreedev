@@ -1,181 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
 
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="../dist/magnific-popup.css" />
 
-  <!-- Magnific Popup core CSS file -->
-  <link rel="stylesheet" href="../dist/magnific-popup.css" />
+    <!-- Magnific Popup core JS file -->
+    <script src="../dist/jquery.magnific-popup.js"></script>
 
-  <!-- Magnific Popup core JS file -->
-  <script src="../dist/jquery.magnific-popup.js"></script>
+    <script src="../js/header.js"></script>
+    <title>Project</title>
+  </head>
 
-  <script src="../js/header.js"></script>
-  <title>Project</title>
-</head>
-
-<body>
-  <div class="header">
-    <div class="jin-wrapper">
-      <div class="header__home-btn">
-        <a href="index.html">
-          <i class="fas fa-home"></i>
-        </a>
-      </div>
-      <div class="title-wrapper">
-        <a href="project.html">
-          <h2 class="header__title">Project</h2>
-        </a>
-      </div>
-      <ul class="header__navi">
-        <li>
-          <div class="header__navi-btn menu-btn myinfo-btn">
-            <a href="home.html"><i class="fas fa-user"></i></a>
-          </div>
-        </li>
-        <li>
-          <div class="header__navi-btn menu-btn project-btn">
-            <a href="project.html"><i class="fas fa-project-diagram"></i></a>
-          </div>
-        </li>
-        <li>
-          <a class="gnb-btn">
-            <div class="header__navi-btn menu-btn view_more-btn">
-              <div class="header__navi-btn-popup">
-                View More
-              </div>
-              <i class="fas fa-plus-circle"></i>
-            </div>
+  <body>
+    <div class="header">
+      <div class="jin-wrapper">
+        <div class="header__home-btn">
+          <a href="index.html">
+            <i class="fas fa-home"></i>
           </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="project-wrapper hide">
-    <!-- Marvel Flip Card -->
-    <div class="section__contents">
-      <div class="contents-wrapper">
-        <ul class="project__portfolio-marvel">
+        </div>
+        <div class="title-wrapper">
+          <a href="project.html">
+            <h2 class="header__title">Project</h2>
+          </a>
+        </div>
+        <ul class="header__navi">
           <li>
-            <h2 class="portfolio-title">HTML & CSS & JS</h2>
+            <div class="header__navi-btn menu-btn myinfo-btn">
+              <a href="home.html"><i class="fas fa-user"></i></a>
+            </div>
           </li>
           <li>
-            <a class="marvel-flip">
-              <div class="portfolio-list">
-                <a href="../../FlipCard/index.html">
-                  <div class="portfolio-list-title-marvel">
-                    Marvel Flip Card Start
-                  </div>
-                  <div class="portfolio-list-bg-marvel" style="background-image: url('../images/marvelbg.jpg')"></div>
-                  <div class="portfolio-list-tab">JavaScript 위주</div>
-                </a>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- EscapeRoom -->
-    <div class="section__contents">
-      <div class="contents-wrapper">
-        <ul class="project__portfolio-escaperoom">
-          <li>
-            <h2 class="portfolio-title">HTML & CSS & JS</h2>
+            <div class="header__navi-btn menu-btn project-btn">
+              <a href="project.html"><i class="fas fa-project-diagram"></i></a>
+            </div>
           </li>
           <li>
-            <a class="escaperoom">
-              <div class="portfolio-list">
-                <a href="../../escaperoom/index.html">
-                  <div class="portfolio-list-title-escaperoom">
-                    EscapeRoom Game
-                  </div>
-                  <div class="portfolio-list-bg-escaperoom" style="background-image: url('../images/escaperoom.jpeg')">
-                  </div>
-                  <div class="portfolio-list-tab">JavaScript 위주</div>
-                </a>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Javascript Tetris -->
-    <div class="section__contents">
-      <div class="contents-wrapper">
-        <ul class="project__portfolio-tetris">
-          <li>
-            <h2 class="portfolio-title">HTML & CSS & JS</h2>
-          </li>
-          <li>
-            <a class="TetrisGame">
-              <div class="portfolio-list">
-                <a href="../../SJ_Tetris/index.html">
-                  <div class="portfolio-list-title-tetris">
-                    Tetris Game
-                  </div>
-                  <div class="portfolio-list-bg-tetris" style="background-image: url('../images/Tetris.jpg')"></div>
-                  <div class="portfolio-list-tab">JavaScript 위주</div>
-                </a>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Scss HollysCoffee -->
-    <div class="section__contents">
-      <div class="contents-wrapper">
-        <ul class="project__portfolio-hollyscoffee">
-          <li>
-            <h2 class="portfolio-title">HTML & SCSS</h2>
-          </li>
-          <li>
-            <a class="Hollys">
-              <div class="portfolio-list">
-                <a href="../../HollysCoffee/index.html">
-                  <div class="portfolio-list-title-hollyscoffee">
-                    HollysCoffee Main Page
-                  </div>
-                  <div class="portfolio-list-bg-hollyscoffee" style="background-image: url('../images/hollys.png')">
-                  </div>
-                  <div class="portfolio-list-tab">SCSS 위주</div>
-                </a>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Campus project Reorder -->
-    <div class="section__contents">
-      <div class="contents-wrapper">
-        <ul class="project__portfolio-reorder">
-          <li>
-            <h2 class="portfolio-title">Node & React & Android & Beacon</h2>
-          </li>
-          <li>
-            <a class="reorder">
-              <div class="portfolio-list">
-                <div class="portfolio-list-title-reorder">
-                  Campus Project
+            <a class="gnb-btn">
+              <div class="header__navi-btn menu-btn view_more-btn">
+                <div class="header__navi-btn-popup">
+                  View More
                 </div>
-                <div class="portfolio-list-bg-reorder" style="background-image: url('../images/Reorder.png')"></div>
-                <div class="portfolio-list-tab">Node / React 담당</div>
+                <i class="fas fa-plus-circle"></i>
               </div>
             </a>
           </li>
@@ -183,107 +67,259 @@
       </div>
     </div>
 
-    <!-- React Study Hooks -->
-    <div class="section__contents">
-      <div class="contents-wrapper">
-        <ul class="project__portfolio-reactstudy">
-          <li>
-            <h2 class="portfolio-title">React</h2>
-          </li>
-          <li>
-            <a class="">
-              <div class="portfolio-list">
-                <a href="https://jaykim3.github.io/todoist/">
-                  <div class="portfolio-list-title-reactstudy">
-                    React Study
-                  </div>
-                  <div class="portfolio-list-bg-reactstudy" style="background-image: url('../images/Reacthooks.jpg')">
-                  </div>
-                  <div class="portfolio-list-tab">React 위주</div>
-                </a>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Team Project SWOT -->
-    <div class="section__contents">
-      <div class="contents-wrapper">
-        <ul class="project__portfolio-swot">
-          <li>
-            <h2 class="portfolio-title">React & Spring & Android & AWS</h2>
-          </li>
-          <li>
-            <div class="portfolio-list">
-              <a href="./video.html">
-                <div class="portfolio-list-title-swot">
-                  Team Project
+    <div class="project-wrapper hide">
+      <!-- Marvel Flip Card -->
+      <div class="section__contents">
+        <div class="contents-wrapper">
+          <ul class="project__portfolio-marvel">
+            <li>
+              <h2 class="portfolio-title">HTML & CSS & JS</h2>
+            </li>
+            <li>
+              <a class="marvel-flip">
+                <div class="portfolio-list">
+                  <a href="../../FlipCard/index.html">
+                    <div class="portfolio-list-title-marvel">
+                      Marvel Flip Card Start
+                    </div>
+                    <div
+                      class="portfolio-list-bg-marvel"
+                      style="background-image: url('../images/marvelbg.jpg')"
+                    ></div>
+                    <div class="portfolio-list-tab">JavaScript 위주</div>
+                  </a>
                 </div>
-                <div class="portfolio-list-bg-swot" style="background-image: url('../images/SWOT.png')"></div>
-                <div class="portfolio-list-tab">React 담당</div>
               </a>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <!-- Personal Project SJinMv -->
-    <div class="section__contents">
-      <div class="contents-wrapper">
-        <ul class="project__portfolio-sjinmv">
-          <li>
-            <h2 class="portfolio-title">React & Node & Mongodb</h2>
-          </li>
-          <li>
-            <div class="portfolio-list">
-              <a href="https://jaykim3.github.io/JinMv_Front/">
-                <div class="portfolio-list-title-sjinmv">
-                  Personal Project
+      <!-- EscapeRoom -->
+      <div class="section__contents">
+        <div class="contents-wrapper">
+          <ul class="project__portfolio-escaperoom">
+            <li>
+              <h2 class="portfolio-title">HTML & CSS & JS</h2>
+            </li>
+            <li>
+              <a class="escaperoom">
+                <div class="portfolio-list">
+                  <a href="../../escaperoom/index.html">
+                    <div class="portfolio-list-title-escaperoom">
+                      EscapeRoom Game
+                    </div>
+                    <div
+                      class="portfolio-list-bg-escaperoom"
+                      style="background-image: url('../images/escaperoom.jpeg')"
+                    ></div>
+                    <div class="portfolio-list-tab">JavaScript 위주</div>
+                  </a>
                 </div>
-                <div class="portfolio-list-bg-sjinmv" style="background-image: url('../images/kinolights.png')"></div>
-                <div class="portfolio-list-tab">전체 담당</div>
               </a>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Javascript Tetris -->
+      <div class="section__contents">
+        <div class="contents-wrapper">
+          <ul class="project__portfolio-tetris">
+            <li>
+              <h2 class="portfolio-title">HTML & CSS & JS</h2>
+            </li>
+            <li>
+              <a class="TetrisGame">
+                <div class="portfolio-list">
+                  <a href="../../SJ_Tetris/index.html">
+                    <div class="portfolio-list-title-tetris">
+                      Tetris Game
+                    </div>
+                    <div
+                      class="portfolio-list-bg-tetris"
+                      style="background-image: url('../images/Tetris.jpg')"
+                    ></div>
+                    <div class="portfolio-list-tab">JavaScript 위주</div>
+                  </a>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Scss HollysCoffee -->
+      <div class="section__contents">
+        <div class="contents-wrapper">
+          <ul class="project__portfolio-hollyscoffee">
+            <li>
+              <h2 class="portfolio-title">HTML & SCSS</h2>
+            </li>
+            <li>
+              <a class="Hollys">
+                <div class="portfolio-list">
+                  <a href="../../HollysCoffee/index.html">
+                    <div class="portfolio-list-title-hollyscoffee">
+                      HollysCoffee Main Page
+                    </div>
+                    <div
+                      class="portfolio-list-bg-hollyscoffee"
+                      style="background-image: url('../images/hollys.png')"
+                    ></div>
+                    <div class="portfolio-list-tab">SCSS 위주</div>
+                  </a>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Campus project Reorder -->
+      <div class="section__contents">
+        <div class="contents-wrapper">
+          <ul class="project__portfolio-reorder">
+            <li>
+              <h2 class="portfolio-title">Node & React & Android & Beacon</h2>
+            </li>
+            <li>
+              <a class="reorder">
+                <div class="portfolio-list">
+                  <div class="portfolio-list-title-reorder">
+                    Campus Project
+                  </div>
+                  <div
+                    class="portfolio-list-bg-reorder"
+                    style="background-image: url('../images/Reorder.png')"
+                  ></div>
+                  <div class="portfolio-list-tab">Node / React 담당</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- React Study Hooks -->
+      <div class="section__contents">
+        <div class="contents-wrapper">
+          <ul class="project__portfolio-reactstudy">
+            <li>
+              <h2 class="portfolio-title">React</h2>
+            </li>
+            <li>
+              <a class="">
+                <div class="portfolio-list">
+                  <a href="https://jaykim3.github.io/todoist/">
+                    <div class="portfolio-list-title-reactstudy">
+                      React Study
+                    </div>
+                    <div
+                      class="portfolio-list-bg-reactstudy"
+                      style="background-image: url('../images/Reacthooks.jpg')"
+                    ></div>
+                    <div class="portfolio-list-tab">React 위주</div>
+                  </a>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Team Project SWOT -->
+      <div class="section__contents">
+        <div class="contents-wrapper">
+          <ul class="project__portfolio-swot">
+            <li>
+              <h2 class="portfolio-title">React & Spring & Android & AWS</h2>
+            </li>
+            <li>
+              <div class="portfolio-list">
+                <a href="./video.html">
+                  <div class="portfolio-list-title-swot">
+                    Team Project
+                  </div>
+                  <div
+                    class="portfolio-list-bg-swot"
+                    style="background-image: url('../images/SWOT.png')"
+                  ></div>
+                  <div class="portfolio-list-tab">React 담당</div>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Personal Project SJinMv -->
+      <div class="section__contents">
+        <div class="contents-wrapper">
+          <ul class="project__portfolio-sjinmv">
+            <li>
+              <h2 class="portfolio-title">React & Node & Mongodb</h2>
+            </li>
+            <li>
+              <div class="portfolio-list">
+                <a href="https://jaykim3.github.io/JinMv_Front/">
+                  <div class="portfolio-list-title-sjinmv">
+                    Personal Project
+                  </div>
+                  <div
+                    class="portfolio-list-bg-sjinmv"
+                    style="background-image: url('../images/JinMv.png')"
+                  ></div>
+                  <div class="portfolio-list-tab">전체 담당</div>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer_links">
+          <div class="footer-name">
+            <span>SJin</span>
+          </div>
+          <div class="blog">
+            <a href="https://jaykim3.github.io/">BLOG</a>
+          </div>
+          <div class="email">
+            <a href="mailto:ragamuffin6706@gmail.com">
+              <i class="fas fa-envelope-square fa-lg"></i>
+            </a>
+            <a href="https://github.com/JayKim3">
+              <i class="fab fa-github fa-lg"></i>
+            </a>
+          </div>
+        </div>
 
-  </div>
-  <footer>
-    <div class="footer-wrapper">
-      <div class="footer_links">
-        <div class="footer-name">
-          <span>SJin</span>
-        </div>
-        <div class="blog">
-          <a href="https://jaykim3.github.io/">BLOG</a>
-        </div>
-        <div class="email">
-          <a href="mailto:ragamuffin6706@gmail.com">
-            <i class="fas fa-envelope-square fa-lg"></i>
-          </a>
-          <a href="https://github.com/JayKim3">
-            <i class="fab fa-github fa-lg"></i>
-          </a>
+        <div class="footer-content">
+          <span><strong>김성진</strong></span>
+          <span
+            >블로그
+            <a href="https://jaykim3.github.io/"
+              >https://jaykim3.github.io</a
+            ></span
+          >
+          <span
+            >이메일
+            <a href="mailto:ragamuffin6706@gmail.com"
+              >ragamuffin6706@gmail.com</a
+            ></span
+          >
+          <span>깃허브 <a href="https://jaykim3.github.io/">JayKim3</a></span>
+          <div class="copyright">
+            Copyright ⓒ 2019 SeongJin All Rights Reserved.
+          </div>
         </div>
       </div>
+    </footer>
 
-      <div class="footer-content">
-        <span><strong>김성진</strong></span>
-        <span>블로그 <a href="https://jaykim3.github.io/">https://jaykim3.github.io</a></span>
-        <span>이메일 <a href="mailto:ragamuffin6706@gmail.com">ragamuffin6706@gmail.com</a></span>
-        <span>깃허브 <a href="https://jaykim3.github.io/">JayKim3</a></span>
-        <div class="copyright">Copyright ⓒ 2019 SeongJin All Rights Reserved.</div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="../js/header.js"></script>
-  <script src="../js/project.js"></script>
-</body>
-
+    <script src="../js/header.js"></script>
+    <script src="../js/project.js"></script>
+  </body>
 </html>

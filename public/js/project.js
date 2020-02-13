@@ -89,7 +89,7 @@ $(".project__portfolio-swot").mouseleave(function() {
 
 $(".project__portfolio-sjinmv").mouseenter(function() {
   $(".portfolio-list-title-sjinmv").text(
-    "현재 로컬에서는 개발이 완료된 상태며 서버쪽 배포 를 어떤식으로 할지 준비중이여서 따로 데이터를 받아오는 부분은 현재 확인이 불가능합니다ㅎㅎ^^..."
+    "AWS EC2로 해당 애플리케이션을 배포하였으며 과금이될 경우를 대비하여 일정 기간에만 서버를 열어두고 있습니다^^.. "
   );
   $(".portfolio-list-bg-sjinmv").css("opacity", 0.7);
 });

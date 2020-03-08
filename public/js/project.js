@@ -64,7 +64,7 @@ $(".project__portfolio-reorder").mouseleave(function() {
 
 $(".project__portfolio-reactstudy").mouseenter(function() {
   $(".portfolio-list-title-reactstudy").text(
-    "리액트를 다루는 기술 책으로 매주 토요일 스터디를 2달간 진행하였으며 To-do-list 미니프로젝트를 서로 커스터마이징 하여 제작하고 코드 리뷰를 통하여 리액트의 효율적인 컴포넌트 관리에 대하여 다시 생각해보게된 계기"
+    "리액트 스터디에서 To-do-list 미니 프로젝트를 서로 커스터마이징 하여 제작하고 코드 리뷰를 통하여 리액트의 효율적인 컴포넌트 관리와 최적화에 대하여 다시 한 번 생각해본 계기 (추가적으로 캘린더에 투두를 넣어보기 위하여 현재 다시 제작 중)"
   );
   $(".portfolio-list-bg-reactstudy").css("opacity", 0.7);
 });

@@ -32,8 +32,6 @@
       padding-top: 15px;
     }
 
-    /* block : 앞뒤로 줄바꿈 된다. 기본 width 가 100% 를 차지하게 된다. */
-
     .portfolio-list {
       display: block;
       height: 300px;
@@ -42,19 +40,24 @@
       box-shadow: 3px 3px 3px 3px gray;
     }
 
+    .portfolio-list img {
+      width: 640px;
+      height: 300px;
+      position: absolute;
+    }
 
 
+    .portfolio-list-bg,
     .portfolio-list-bg-marvel,
     .portfolio-list-bg-escaperoom,
     .portfolio-list-bg-tetris,
-    .portfolio-list-bg-reorder,
-    .portfolio-list-bg-hollyscoffee,
+    .portfolio-list-bg-calendar,
     .portfolio-list-bg-swot,
-    .portfolio-list-bg-reactstudy,
     .portfolio-list-bg-sjinmv {
       background-position: center;
       background-size: cover;
       position: absolute;
+      width: 640px;
       top: 0;
       bottom: 0;
       left: 0;
@@ -63,14 +66,7 @@
       transition: 0.5s;
     }
 
-    .portfolio-list-bg-marvel:hover,
-    .portfolio-list-bg-escaperoom:hover,
-    .portfolio-list-bg-tetris:hover,
-    .portfolio-list-bg-reorder:hover,
-    .portfolio-list-bg-hollyscoffee:hover,
-    .portfolio-list-bg-swot:hover,
-    .portfolio-list-bg-reactstudy:hover,
-    .portfolio-list-bg-sjinmv:hover {
+    .portfolio-list-bg {
       opacity: 0.7;
     }
 
@@ -78,8 +74,7 @@
     .portfolio-list-title-marvel,
     .portfolio-list-title-escaperoom,
     .portfolio-list-title-tetris,
-    .portfolio-list-title-hollyscoffee,
-    .portfolio-list-title-reactstudy,
+    .portfolio-list-title-calendar,
     .portfolio-list-title-reorder,
     .portfolio-list-title-swot,
     .portfolio-list-title-sjinmv {

@@ -38,16 +38,16 @@ $(".project__portfolio-tetris").mouseleave(function() {
   $(".portfolio-list-bg-tetris").css("opacity", 1.0);
 });
 
-$(".project__portfolio-hollyscoffee").mouseenter(function() {
-  $(".portfolio-list-title-hollyscoffee").text(
-    "CSS를 다른 기술을 사용해보기 위하여 SCSS 강의를 듣고 간단하게 메인 페이지만 만들어봄 - 따로 반응형은 적용하지 않아 모바일 화면에서는 레이아웃이 맞지 않습니다."
+$(".project__portfolio-calendar").mouseenter(function() {
+  $(".portfolio-list-title-calendar").text(
+    "자바스크립트 ES6를 더 깊게 이해하기 위하여 혼자 힘으로 만들었으며 구조적인 부분과 중복된 부분을 합치면서 최대한 코드를 깔끔하게 작성하였다."
   );
-  $(".portfolio-list-bg-hollyscoffee").css("opacity", 0.7);
+  $(".portfolio-list-bg-calendar").css("opacity", 0.7);
 });
 
-$(".project__portfolio-hollyscoffee").mouseleave(function() {
-  $(".portfolio-list-title-hollyscoffee").text("HollysCoffee Main Page");
-  $(".portfolio-list-bg-hollyscoffee").css("opacity", 1.0);
+$(".project__portfolio-calendar").mouseleave(function() {
+  $(".portfolio-list-title-calendar").text("calendar Game");
+  $(".portfolio-list-bg-calendar").css("opacity", 1.0);
 });
 
 $(".project__portfolio-reorder").mouseenter(function() {
@@ -62,24 +62,11 @@ $(".project__portfolio-reorder").mouseleave(function() {
   $(".portfolio-list-bg-reorder").css("opacity", 1.0);
 });
 
-$(".project__portfolio-reactstudy").mouseenter(function() {
-  $(".portfolio-list-title-reactstudy").text(
-    "리액트 스터디에서 To-do-list 미니 프로젝트를 서로 커스터마이징 하여 제작하고 코드 리뷰를 통하여 리액트의 효율적인 컴포넌트 관리와 최적화에 대하여 다시 한 번 생각해본 계기 (추가적으로 캘린더에 투두를 넣어보기 위하여 현재 다시 제작 중)"
-  );
-  $(".portfolio-list-bg-reactstudy").css("opacity", 0.7);
-});
-
-$(".project__portfolio-reactstudy").mouseleave(function() {
-  $(".portfolio-list-title-reactstudy").text("React Study");
-  $(".portfolio-list-bg-reactstudy").css("opacity", 1.0);
-});
-
 $(".project__portfolio-swot").mouseenter(function() {
   $(".portfolio-list-title-swot").text(
     "학교 강의실 예약과 동시에 스터디 모집을 연동을 주제로 총 4명에서 팀을 이루었으며 웹, 서버, 앱으로 개발하였으며 전체적인 기획과 웹 부분을 전담하여 담당하였습니다."
   );
   $(".portfolio-list-bg-swot").css("opacity", 0.7);
-  $(".portfolio-list-title-swot").css("color", "black");
 });
 
 $(".project__portfolio-swot").mouseleave(function() {

@@ -12,9 +12,7 @@
     .project__portfolio-marvel,
     .project__portfolio-escaperoom,
     .project__portfolio-tetris,
-    .project__portfolio-hollyscoffee,
-    .project__portfolio-reorder,
-    .project__portfolio-reactstudy,
+    .project__portfolio-minesweeper,
     .project__portfolio-swot,
     .portfolio-list-bg-sjinmv {
       padding: 10px 0;
@@ -52,6 +50,7 @@
     .portfolio-list-bg-escaperoom,
     .portfolio-list-bg-tetris,
     .portfolio-list-bg-calendar,
+    .portfolio-list-bg-minesweeper,
     .portfolio-list-bg-swot,
     .portfolio-list-bg-sjinmv {
       background-position: center;
@@ -75,6 +74,7 @@
     .portfolio-list-title-escaperoom,
     .portfolio-list-title-tetris,
     .portfolio-list-title-calendar,
+    .portfolio-list-title-minesweeper,
     .portfolio-list-title-reorder,
     .portfolio-list-title-swot,
     .portfolio-list-title-sjinmv {
@@ -126,9 +126,8 @@
       .portfolio-list-title-marvel,
       .portfolio-list-title-escaperoom,
       .portfolio-list-title-tetris,
-      .portfolio-list-title-hollyscoffee,
-      .portfolio-list-title-reactstudy,
-      .portfolio-list-title-reorder,
+      .portfolio-list-title-calendar,
+      .portfolio-list-title-minesweeper,
       .portfolio-list-title-swot,
       .portfolio-list-title-sjinmv {
         font-size: 1.2rem;
@@ -154,9 +153,8 @@
       .portfolio-list-title-marvel,
       .portfolio-list-title-escaperoom,
       .portfolio-list-title-tetris,
-      .portfolio-list-title-hollyscoffee,
-      .portfolio-list-title-reactstudy,
-      .portfolio-list-title-reorder,
+      .portfolio-list-title-calendar,
+      .portfolio-list-title-minesweeper,
       .portfolio-list-title-swot,
       .portfolio-list-title-sjinmv {
         font-size: 1rem;

@@ -50,6 +50,18 @@ $(".project__portfolio-calendar").mouseleave(function() {
   $(".portfolio-list-bg-calendar").css("opacity", 1.0);
 });
 
+$(".project__portfolio-minesweeper").mouseenter(function() {
+  $(".portfolio-list-title-minesweeper").text(
+    "구조적인 부분을 매우 신경쓰면서 만들었다. 랭킹을 보여주기 위해 게임 클리어시 이름과 시간을 파이어베이스 DB를 사용하였으며 배포 또한 파이어베이스로 간단하게 처리하였다."
+  );
+  $(".portfolio-list-bg-minesweeper").css("opacity", 0.7);
+});
+
+$(".project__portfolio-minesweeper").mouseleave(function() {
+  $(".portfolio-list-title-minesweeper").text("Minesweeper Game");
+  $(".portfolio-list-bg-minesweeper").css("opacity", 1.0);
+});
+
 $(".project__portfolio-reorder").mouseenter(function() {
   $(".portfolio-list-title-reorder").text(
     "비콘을 이용한 주문예약 시스템을 주제로 서버라는 개념을 처음 알게되어 전체적인 기획 과 Node 서버 구축(사용자와 웹쪽 REST API방식으로 데이터 처리)를 100% 맡았으며 리액트 라이브러리를 사용하여 관리자 웹을 구축 및 사용자의 안드로이드쪽은 다른 두 친구가 개발을 진행 "
